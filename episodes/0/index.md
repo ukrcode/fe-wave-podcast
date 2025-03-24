@@ -1,6 +1,6 @@
 # #0: Пілотний епізод: 10x Faster TypeScript, кастомний селект та майбутнє htmx
 
-Випуск підготовлений на основі дайджесту [Front-end Digest № 91: 10x Faster TypeScript, кастомний селект та майбутнє htmx](https://dou.ua/forums/topic/52975/) від [Olexander Smolianinov](https://dou.ua/users/dersmoll/)
+Випуск підготовлений на основі дайджесту [Front-end Digest № 92: WIP]() від [Olexander Smolianinov](https://dou.ua/users/dersmoll/)
 
 ## WIP Новини випуску
 
