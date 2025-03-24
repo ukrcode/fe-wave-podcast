@@ -1,53 +1,50 @@
 # #0: Пілотний епізод: 10x Faster TypeScript, кастомний селект та майбутнє htmx
 
-Випуск підготовлений на основі дайджесту [Front-end Digest № 92: WIP]() від [Olexander Smolianinov](https://dou.ua/users/dersmoll/)
+Випуск підготовлений на основі дайджесту [Front-end Digest № 92: кіберзлочини з CSS, Next.js vs TanStack та Motion для Vue](https://dou.ua/forums/topic/53079/) від [Olexander Smolianinov](https://dou.ua/users/dersmoll/)
 
-## WIP Новини випуску
+НОВИН: 19 треба десь 12
 
-### Веброзробка
+## Веброзробка
 
-- [Демістифікація вебкомпонентів](https://css-tricks.com/web-components-demystified/)
-- [Майбутнє Htmx — стабільність та сумісність](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/)
-- Реалізація пошуку за допомогою Astro Actions і Fuse.js
-- Apollo: GraphQL тепер з’єднується з REST API без особливих зусиль
-- [Ліниве завантаження фонових зображень з API IntersectionObserver](https://www.debugbear.com/blog/lazy-load-background-images-intersection-observer)
-- Створення браузерної гри за допомогою ванільного JS та CSS
-- [Oxlint вийшов у бета-реліз після понад року розробки силами спільноти](https://oxc.rs/blog/2025-03-15-oxlint-beta.html)
+1. [Вебкомпоненти проти компонентів фреймворку: в чому різниця](https://www.smashingmagazine.com/2025/03/web-components-vs-framework-components/)
+    По темі:
+    - [Демістифікація вебкомпонентів](https://css-tricks.com/web-components-demystified/)
 
-#### Ефекти
+2. [Попередній перегляд змін вмісту у вашій роботі за допомогою document.designMode](https://www.smashingmagazine.com/2025/03/previewing-content-changes-work-documentdesignmode/)
 
-- Гра зі світлом та заломленням у Three.js: викривлення 3D-тексту всередині скляного тору
-- Реплікація CSS Object-Fit у WebGL: оптимізовані методи масштабування та позиціонування зображень
-- Рендеринг процедурного вихору всередині скляної сфери за допомогою Three.js та TSL
-- Glass Button — реалістичний ефект скляної кнопки
+3. [TypeScript отримує в 10 разів швидший компілятор — що це означає для розробників](https://blog.logrocket.com/typescript-new-compiler/)
+    По темі:
+    - Великий анонс: TypeScript тепер у 10 разів швидший
+    - Для 10-кратного прискорення збірок компілятор TypeScript переписують на Go
+4. ??? [StringTune: JS-бібліотека для анімації, що народилася з робочого процесу в дизайн-агенції](https://tympanus.net/codrops/2025/03/19/stringtune-the-javascript-library-born-from-a-design-agencys-workflow/)
 
-### CSS
+### Інструменти
 
-- Кастомний селект: історія, трюки та CSS-стилізація (частина 1)
-- Швидший рендеринг з CSS-властивістю content-visibility
-- Застосування View Transitions: плавна анімація border-radius за допомогою View Transition
-- Нескінченна анімація логотипів
-- Ненав’язливі підкреслення тексту
-- Розпочинаємо експерименти з ефектом черговості
-- Як накладати зображення за допомогою CSS: практичний посібник
+1. [ESLint v9: як пережити міграцію — посібник для розробників](https://www.neoxs.me/blog/migration-to-eslint-v9)
+2. [Oxlint тепер у бета-версії з 500+ вбудованими правилами та вдвічі швидшим лінтуванням JavaScript](https://socket.dev/blog/oxlint-now-in-beta-with-500-built-in-rules-2X-faster-javascript-linting)
 
-### TypeScript
-- Великий анонс: TypeScript тепер у 10 разів швидший
-- Для 10-кратного прискорення збірок компілятор TypeScript переписують на Go
-- Відповідь Deno на нещодавню підтримку TypeScript у Node
-- Enums у TypeScript: застосування, плюси та кращі підходи
+## CSS 
 
-### JavaScript
-- Як рушії ECMAScript оптимізують ваші змінні
-- JavaScript-втома знову дає про себе знати
-- Чому новітні фреймворки JavaScript — марна трата часу
-- Як виправити помилку CORS у Vue.js
+1. Каруселі за допомогою CSS
+2. [Кіберзлочинці використовують CSS для обходу спам-фільтрів та відстеження дій користувачів електронної пошти](https://thehackernews.com/2025/03/cybercriminals-exploit-css-to-evade.html)
+3. Зменшення складності CSS за допомогою псевдокласу :is()
+4. Сучасний CSS: боязкі дефолти та сміливі оверрайди
+5. На підтримку адаптивної типографіки
 
-#### React
-- За межами React.memo: розумніші способи оптимізації продуктивності
-- Як The New York Times систематично мігрувала з Enzyme на React Testing Library
-- Як працювати з react-scripts в умовах швидкозмінного ландшафту React.
-- Повний посібник з API AbortController
-- Експерименти з React View Transitions
 
+## JavaScript
+1. Як використовувати AbortController для керування скасованими асинхронними завданнями в JavaScript
+2. Навчання ШІ для виявлення шкідливого JavaScript та забезпечення безпечнішого вебперегляду
+3. Next.js vs TanStack
+4. ??? Представляємо Motion for Vue
+
+## React
+1. Чому React несподівано є оптимальною моделлю для LLM-воркфлоу
+2. Управління замиканнями JavaScript в React
+3. Глибоке занурення в SSR для React-розробників
+
+## Angular
+- Angular 19.2 вже доступний
+- ??? Режими Routes Rendering в Angular
+- ??? 5 помилок, яких припускаються розробники, використовуючи Signals в Angular
 
