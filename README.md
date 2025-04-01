@@ -13,8 +13,13 @@
 
 - [0][]: Пілотний випуск
 
+## Скрипти
+
+- `npm run html-to-md`: конвертує HTML з файлу `scripts/index.html` і пхає його в `scripts/index.md`
+
 ---
 
 Ліцензія скоро буде
 
 [0]: episodes/0/index.md
+
