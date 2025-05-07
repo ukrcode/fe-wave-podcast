@@ -1,44 +1,67 @@
-# #0: Пілотний епізод: 10x Faster TypeScript, кастомний селект та майбутнє htmx
+# #0: Пілотний епізод
 
-Випуск підготовлений на основі дайджесту [Front-end Digest № 95: currentColor в 2025, Debouncing vs Throttling та вступ в TanStack Start](https://dou.ua/forums/topic/53368/) від [Olexander Smolianinov](https://dou.ua/users/dersmoll/)
+# Front-end Digest № 98: GSAP тепер безплатний, АІ-агенти та оновлення вебплатформи
+
+Привіт, колеги. Мене звати Олександр, я займаюся фронтендом в компанії Zfort Group. Маю для вас свіжий дайджест з цікавими матеріалами зі світу фронтенду за останній тиждень.
 
 ### Веброзробка
 
-- [Що таке вайб-кодинг? І чи вартий він галасу?](https://blog.logrocket.com/what-is-vibe-coding/)
-- [Вступ до фреймворку TanStack Start](https://blog.logrocket.com/tanstack-start-overview/)
-- [MSW для імітації бекенд API: практичний посібник для безшовної фронтенд-розробки.](https://jsdev.space/isolated-frontend-msw/)
-- [Next.js для багатокористувацького SaaS: інтеграція фронтенду.](https://www.sitepoint.com/multi-tenant-saas-application-with-next-js-frontend/)
-- [Занадто складні якірні посилання — математичне розв’язання проблеми](https://thirty-five.com/overengineered-anchoring)
-- [Створення компонента «Утримуй для видалення»](https://emilkowal.ski/ui/building-a-hold-to-delete-component)
-- [Створення повнофункціонального 3D світу в браузері за допомогою Blender та Three.js](https://tympanus.net/codrops/2025/04/08/3d-world-in-the-browser-with-blender-and-three-js/)
-- [Результати WebAIM Million показують, що сайти магазинів мають найгіршу доступність](https://cerovac.com/a11y/2025/04/webaim-million-results-show-that-shopping-sites-have-worst-accessibility/)
+- [Вибір найкращої моделі контролю доступу для вашого фронтенду](https://blog.logrocket.com/choosing-best-access-control-model-frontend/)
+- [Як АІ-агенти змінять веб для користувачів і розробників](https://thenewstack.io/how-ai-agents-will-change-the-web-for-users-and-developers/)
+- ✅ [Чому HTML не має вбудованої функції include? Шукаємо відповідь](https://frontendmasters.com/blog/seeking-an-answer-why-cant-html-alone-do-includes/)
+- ✅ [Функціональний HTML](https://overreacted.io/functional-html/)
+- ✅ [Повернення до карт зображень (Image Maps)](https://css-tricks.com/revisiting-image-maps/)
+- ✅[Interop об’єднує розробників браузерів для усунення вебнеузгодженостей](https://thenewstack.io/interop-unites-browser-makers-to-smooth-web-inconsistencies/)
+- ✅ [Створення серверних вебзастосунків за допомогою htmx](https://blog.logrocket.com/htmx-server-driven-web-apps/)
+- [Як я свічнувся з .NET на Svelte, або чому цей фреймворк вартий уваги](https://dou.ua/forums/topic/53560/)
+- ✅ [Як я створив технічний блог за допомогою Hugo та GitHub Pages](https://dou.ua/forums/topic/53607/)
+
+#### Оновлення
+
+- ✅ [GSAP тепер на 100% БЕЗКОШТОВНИЙ!](https://gsap.com/blog/3-13/)
+- ✅ [Щомісячний дайджест оновлень Baseline за березень 2025](https://web.dev/blog/baseline-digest-mar-2025)
+- ✅ [Нове на вебплатформі у квітні](https://web.dev/blog/web-platform-04-2025)
+- ✅ [Що нового в Astro — квітень 2025](https://astro.build/blog/whats-new-april-2025/)
+- ✅ [Що нового у Svelte — травень 2025](https://svelte.dev/blog/whats-new-in-svelte-may-2025)
+
+#### Доступність
+
+- [Запропонована модель оцінювання WCAG 3.0: зрушення в оцінці доступності](https://www.smashingmagazine.com/2025/05/wcag-3-proposed-scoring-model-shift-accessibility-evaluation/)
+- [Елемент cite](https://heydonworks.com/article/the-cite-element/)
+
+#### Ефекти
+
+- [Хороша vs чудова анімація](https://emilkowal.ski/ui/good-vs-great-animations)
+- [Форма краплі з ефектом наведення](https://css-tip.com/blob-hover/)
+- [Анімація у кадрах: повторювані переходи зображень](https://tympanus.net/codrops/2025/04/28/animating-in-frames-repeating-image-transition/)
 
 ### CSS
 
-- [::scroll-button() - CSS псевдоелемент, що представляє кнопку для керування прокруткою scroll container](https://developer.mozilla.org/en-US/docs/Web/CSS/::scroll-button)
-- [Використання currentColor у 2025 році](https://frontendmasters.com/blog/using-currentcolor-in-2025/)
-- [Змінюються стилі за замовчуванням для елементів h1](https://developer.mozilla.org/en-US/blog/h1-element-styles/)
-- [Item Flow — Примітки щодо запропонованої системи потоку елементів для grid, flexbox та masonry](https://ishadeed.com/article/item-flow/)
-- [Кастомізація елементу progress з використанням функції attr()](https://frontendmasters.com/blog/custom-progress-element-using-the-attr-function/)
-- [Прості розмиті плейсхолдери зображень виключно засобами CSS](https://leanrada.com/notes/css-only-lqip/)
-- [Функція @apply у Tailwind працює краще, ніж здається](https://css-tricks.com/tailwinds-apply-feature-is-better-than-it-sounds/)
-- [Каруселі на CSS](https://css-tricks.com/css-carousels/)
-- [Краща типографіка з text-wrap pretty](https://webkit.org/blog/16547/better-typography-with-text-wrap-pretty/)
-- [Використовуйте shape() для адаптивного обрізання](https://developer.chrome.com/blog/css-shape?hl=en)
-- [Топ-5 помилок в CSS для навігаційного меню](https://blog.css-weekly.com/top-5-css-navigation-menu-mistakes)
+- [Простіша верстка з margin-trim](https://webkit.org/blog/16854/margin-trim/)
+- [Криволінійні вирізи блоків в CSS](https://frontendmasters.com/blog/curved-box-cutouts-in-css/)
+- [Команди CSS shape()](https://css-tricks.com/css-shape-commands/)
+- [Розміщення якірних елементів ігнорує порядок в HTML](https://css-tricks.com/anchor-positioning-just-dont-care-about-source-order/)
+- [Поліфілінг CSS за допомогою розширень CSS-парсера](https://www.bram.us/2025/05/04/css-parser-extensions-pitch/)
+- [Закруглені трикутні блоки в CSS/SVG](https://www.trysmudford.com/blog/rounded-triangular-boxes-in-css/)
 
 ### JavaScript
 
-- [Приховування елементів, які потребують JavaScript, без JavaScript](https://0xda.de/blog/2025/04/hiding-elements-that-require-javascript-without-javascript/)
-- [Підвищіть свій рівень TypeScript за допомогою типів Record.](https://blog.logrocket.com/typescript-record-types/)
-- [Оператор ?? в JavaScript: майстерність використання значень за замовчуванням.](https://allthingssmitty.com/2025/04/10/mastering-default-values-in-javascript-with-the-nullish-coalescing-operator/)
-- [Debouncing vs Throttling в JavaScript: Коли використовувати кожен з них](https://www.infinitecircuits.dev/blogs/blog/debouncing-vs-throttling-in-javascript-when-to-use-each-1I0bMJepL8HeKAq3ePcu)
-- [Захистіть програму Vue за допомогою OpenID Connect і шаблону BFF](https://blog.duendesoftware.com/posts/20250409-secure-vue-app-with-openid-connect-bff-pattern/)
+- [Інформування V8: прискорення запуску JavaScript за допомогою явних підказок компілятору](https://v8.dev/blog/explicit-compile-hints)
+- [vitepress-plugin-llms — VitePress-плагін для генерації LLM-friendly документації для ваших проєктів](https://github.com/okineadev/vitepress-plugin-llms)
 
-#### React
+### Теорія
 
-- [Просунутий React у реальних умовах: практичні кейси з амбітних веб-проєктів (2022–2025)](https://largeapps.dev/case-studies/advanced/)
-- [React Reconciliation: прихований рушій ваших компонентів](https://cekrem.github.io/posts/react-reconciliation-deep-dive/)
-- [Посібник з використання SVG в React](https://blog.logrocket.com/guide-svgs-react/)
-- [Як ефективно використовувати React useRef Hook](https://blog.logrocket.com/react-useref/)
-- [React для двох комп’ютерів](https://overreacted.io/react-for-two-computers/)
+- [SOLID: Принцип єдиної відповідальності (SRP) — серія статей](https://blog.logrocket.com/single-responsibility-principle-srp/)
+- [Як працюють Promises в JavaScript](https://www.deepintodev.com/blog/how-promises-work-in-javascript)
+- [JavaScript: як перетворити значення в strings](https://2ality.com/2025/04/stringification-javascript.html)
+- [JavaScript, when is this?](https://piccalil.li/blog/javascript-when-is-this/)
+- [Запити Axios POST: обробка помилок, автентифікація та найкращі практики](https://blog.logrocket.com/axios-post-requests/)
+- [Глибоке занурення в Payment Request API](https://www.telerik.com/blogs/deep-dive-payment-request-api)
+
+### React
+
+- [React Internals: який useEffect запускається першим](https://frontendmasters.com/blog/react-internals-which-useeffect-runs-first/)
+- [React Compiler RC: що це означає для React-розробників](https://blog.logrocket.com/react-compiler-rc/)
+- [Паралельні оптимістичні оновлення в React Query](https://tkdodo.eu/blog/concurrent-optimistic-updates-in-react-query?ref=dailydev)
+- [Надійна архітектура отримання даних для складних React/Next.js-застосунків](https://www.trevorlasn.com/blog/fetching-data-for-complex-next-and-react-apps)
+
