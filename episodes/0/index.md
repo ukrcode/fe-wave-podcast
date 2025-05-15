@@ -2,6 +2,12 @@
 
 [Front-end Digest № 99: Figma Sites, чи подобається комусь React і NPM у небезпеці](https://dou.ua/forums/topic/53777/)
 
+NPM в небезпеці, веб-компоненти в Stencil, everybody hates React. Це пілотний випуск подкасту "Фронтенд Хвиля" подкасти про найважливіші новини фронтенду. 
+
+Цей випуск зроблено на основі [Front-end Digest № 99](https://dou.ua/forums/topic/53777/) від Олександра Смольянова, який виходить у фронтед спільноті Dou. 
+
+Мене звати Станіслав і я розробник з Києва. Ідея цього подкасту виникла після того, як я не знайшов подібного подкасту українською мовою, який виходить регулярно. Тут маю намір розповідати леше про найважливіше, щоб не випадати з контексту професії і технологій які кудись постійно біжуть.
+
 ## Веброзробка
 
 - ✅ [NPM у небезпеці: хакери використовують кросмовні пакети-підробки](https://www.csoonline.com/article/3980073/hackers-booby-trap-npm-with-cross-language-imposter-packages.html?ref=dailydev)
@@ -29,10 +35,6 @@
 - ⁉️ [Smashing Animations Part 1: як класичні мультфільми надихають сучасний CSS](https://www.smashingmagazine.com/2025/05/smashing-animations-part-1-classic-cartoons-inspire-css/)
 - ⁉️ [Оновлення Popover та CSS Anchor Positioning Polyfills](https://www.oddbird.net/2025/05/06/polyfill-updates/)
 - ✅ [Чи доступні «CSS Carousels»](https://www.sarasoueidan.com/blog/css-carousels-accessibility/)
-- [Орбітальна механіка (або як я оптимізував CSS Keyframes Animation)](https://css-tricks.com/orbital-mechanics-or-how-i-optimized-a-css-keyframes-animation/)
-- [Тіні для скролбарів з використанням анімацій, керованих прокручуванням](https://css-tricks.com/modern-scroll-shadows-using-scroll-driven-animations/)
-- [Як користуватися плагіном Tailwind Typography](https://blog.logrocket.com/how-to-use-the-tailwind-typography-plugin/)
-- [Як використовувати кастомні шрифти в Tailwind CSS](https://blog.logrocket.com/custom-fonts-tailwind-css/)
 
 ## JavaScript
 
@@ -51,7 +53,11 @@
     4. Learning Curve
     5. Overuse
 
+    Я створив issue на GitHub цього сайту, щоб переписати його не Реакт. Якщо хтось хоче зі мною, то пишіть коментар, я скину посилання на форк.
+
 ### Майже увійшло
+
+Цікаві статті які не влізли, але мали б влізти.
 
 - ✅ [RSC для розробників на Astro](https://overreacted.io/rsc-for-astro-developers/)
 - ✅ [Колірні моделі для людей і пристроїв](https://developer.mozilla.org/en-US/blog/color-models-humans-devices/)
