@@ -1,12 +1,12 @@
 # #0: Пілотний епізод
 
-[Front-end Digest № 99: Figma Sites, чи подобається комусь React і NPM у небезпеці](https://dou.ua/forums/topic/53777/)
+Шкідливі NPM пакети, Figma Sites, everybody hates React. Це пілотний випуск подкасту "Фронтенд Хвиля", подкасту про найважливіші новини фронтенду.
 
-NPM в небезпеці, веб-компоненти в Stencil, everybody hates React. Це пілотний випуск подкасту "Фронтенд Хвиля" подкасти про найважливіші новини фронтенду.
+---
+
+Мене звати Станіслав і я розробник з Києва. Ідея цього подкасту виникла після того, як я не знайшов подібного подкасту українською мовою, який виходить регулярно. Тут маю намір розповідати лише про найважливіше, щоб не випадати з контексту професії і технологій які кудись постійно біжуть.
 
 Цей випуск зроблено на основі [Front-end Digest № 99](https://dou.ua/forums/topic/53777/) від Олександра Смольянова, який виходить у фронтед спільноті Dou.
-
-Мене звати Станіслав і я розробник з Києва. Ідея цього подкасту виникла після того, як я не знайшов подібного подкасту українською мовою, який виходить регулярно. Тут маю намір розповідати леше про найважливіше, щоб не випадати з контексту професії і технологій які кудись постійно біжуть.
 
 ## Веброзробка
 
@@ -107,9 +107,10 @@ NPM в небезпеці, веб-компоненти в Stencil, everybody hat
 - [Error.isError(): кращий спосіб перевірки типів помилок у JavaScript](https://www.trevorlasn.com/blog/error-iserror-javascript)
 
   **Чому `instanceof` може не працювати коректно**:
+
   - `instanceof` залежить від контексту виконання (наприклад, між різними iframe).
   - Помилки, створені в різних середовищах, можуть не розпізнаватися як екземпляри `Error`.
-  
+
   **Browser Support**: `Error.isError()` підтримується в сучасних браузерах, але для старих середовищ може знадобитися полівіл.
 
   Instead of checking the prototype chain, Error.isError() uses a simpler and more reliable approach. It looks for a special internal marker (like a hidden ID tag) that gets added to every genuine Error object when it’s created.
@@ -118,13 +119,22 @@ NPM в небезпеці, веб-компоненти в Stencil, everybody hat
 
   1. It correctly identifies errors even when they come from different contexts (like iframes or modules)
   2. It rejects fake objects that try to pretend they’re errors by manipulating the prototype
-  Think of it like checking for a manufacturer’s watermark instead of just looking at the label - it’s much harder to fake.
+     Think of it like checking for a manufacturer’s watermark instead of just looking at the label - it’s much harder to fake.
 
   **Приклад використання**:
+
   ```javascript
   const error = new Error("Something went wrong");
   console.log(Error.isError(error)); // true
   ```
+
+- [Оновлення Popover та CSS Anchor Positioning Polyfills](https://www.oddbird.net/2025/05/06/polyfill-updates/)
+
+  У статті розглядаються останні оновлення для поліфілів, які забезпечують підтримку Popover API та CSS Anchor Positioning у браузерах, що ще не впровадили ці функції. Основні моменти:
+  - **Popover API**: Дозволяє створювати інтерактивні елементи, такі як модальні вікна та тултіпи, з нативною підтримкою браузера.
+  - **CSS Anchor Positioning**: Забезпечує точне позиціонування елементів відносно інших елементів на сторінці, що спрощує створення адаптивних інтерфейсів.
+  - **Поліфіли**: Оновлення включають покращення продуктивності, сумісності та нові API для розробників, які дозволяють легше інтегрувати ці функції у проєкти.
+  - **Рекомендації**: Використовувати поліфіли для забезпечення кросбраузерної підтримки, поки ці функції не стануть стандартом.
 
 - [Як форматувати дати в JavaScript: Методи, бібліотеки та найкращі практики](https://blog.logrocket.com/javascript-date-format/)
   У статті розглядаються різні способи форматування дат у JavaScript, включаючи вбудовані методи, такі як `toLocaleDateString`, і популярні бібліотеки, наприклад, `date-fns` та `day.js`. Основні моменти:
@@ -135,8 +145,7 @@ NPM в небезпеці, веб-компоненти в Stencil, everybody hat
     - `day.js`: Мінімалістична альтернатива `moment.js` з подібним API.
     - `moment.js`: Вважається застарілою через великий розмір і відсутність активної підтримки.
   - **Нові можливості**: У JavaScript планується впровадження нових нативних API для роботи з датами, таких як `Temporal`, які забезпечать більш сучасний і надійний підхід.
-  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal
-
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal
 
 - [Як і коли використовувати приведення типів у TypeScript](https://blog.logrocket.com/type-casting-typescript/)
   У статті пояснюється, як і коли використовувати приведення типів у TypeScript для забезпечення гнучкості та точності в роботі з типами. Основні моменти:
@@ -145,13 +154,13 @@ NPM в небезпеці, веб-компоненти в Stencil, everybody hat
   - Type `casting/conversion` — This involves actually transforming the data from one type to another. It changes the underlying data type. Type casting can be done using built-in methods like `String`(), `Number`(), `Boolean`(), etc.
 
   **When casting makes sense**
-    
+
   Do not throw type casting at the smallest error! Type casting is a powerful feature, but you shouldn’t use it casually. It should be applied thoughtfully, usually when you’re confident about the data’s shape, but TypeScript isn’t. Here are some good use cases:
 
-    - You’re working with third-party libraries that return loosely typed data
-    - You’re parsing JSON and know the structure ahead of time
-    - When TypeScript can’t infer a more specific type from a generic or any
-    - You’re interacting with the DOM or external APIs in browser environments
+  - You’re working with third-party libraries that return loosely typed data
+  - You’re parsing JSON and know the structure ahead of time
+  - When TypeScript can’t infer a more specific type from a generic or any
+  - You’re interacting with the DOM or external APIs in browser environments
 
 - [Запуск TypeScript у Node.js: tsx vs ts-node та native](https://blog.logrocket.com/running-typescript-node-js-tsx-vs-ts-node-vs-native/)
 
@@ -160,17 +169,21 @@ NPM в небезпеці, веб-компоненти в Stencil, everybody hat
   A TypeScript runner is any program that directly executes TypeScript code. Other JavaScript runtimes like `Bun` and `Deno` have TypeScript runners built in. The runner allows developers to execute TypeScript code in one step instead of the default two steps of transpiling and then executing the resulting JavaScript code.
 
   **Обмеження нативної підтримки Node.js**:
+
   - Node.js не виконує повну компіляцію TypeScript, а лише видаляє типи (type stripping). Це означає, що складні TypeScript-функції, такі як декоратори або специфічні типи, можуть викликати помилки під час виконання.
   - Якщо у коді використовується функціонал, який не підтримується, Node.js видасть помилку виконання. Наприклад, використання експериментальних або нестандартних TypeScript можливостей може призвести до збоїв.
 
   **Nest.js CLI**:
+
   - Nest.js CLI використовує `tsx` для запуску TypeScript у режимі розробки. Це дозволяє швидко виконувати TypeScript-код без необхідності попередньої компіляції, що значно прискорює розробку. У production-режимі Nest.js зазвичай компілює TypeScript у JavaScript перед виконанням.
 
   **Deno та Bun**:
+
   - **Deno**: Має вбудовану підтримку TypeScript без необхідності додаткових інструментів. Deno використовує власний компілятор, заснований на `swc` (Speedy Web Compiler), який забезпечує швидку і ефективну компіляцію TypeScript у JavaScript. Це дозволяє Deno автоматично компілювати TypeScript перед виконанням, забезпечуючи повну підтримку TypeScript-функціоналу.
   - **Bun**: Також підтримує TypeScript "з коробки". Bun використовує `esbuild` як компілятор TypeScript, що робить процес компіляції надзвичайно швидким. Завдяки цьому Bun ідеально підходить для розробників, які цінують продуктивність і швидкість виконання.
 
   **Рекомендації**:
+
   - Використовувати `tsx` для швидкого прототипування та розробки.
   - Обирати нативну підтримку Node.js, якщо потрібна мінімальна залежність від сторонніх інструментів, але враховувати її обмеження.
   - Застосовувати `ts-node` для проєктів, які вже інтегровані з цим інструментом.
@@ -180,13 +193,13 @@ NPM в небезпеці, веб-компоненти в Stencil, everybody hat
 
 - [JSX.lol — комусь взагалі подобається React?](https://jsx.lol/)
 
-  1. Complexity
-  2. Performance Overhead
-  3. Bundle Size
-  4. Learning Curve
-  5. Overuse
+  1. Складність
+  2. Надмірне навантаження на продуктивність
+  3. Розмір бандлу
+  4. Крива навчання
+  5. Надмірне використання
 
-  [Liskov's Gun](https://www.baldurbjarnason.com/2024/liskovs-gun/) — стаття, яка досліджує, як принцип 
+  [Liskov's Gun](https://www.baldurbjarnason.com/2024/liskovs-gun/) — стаття, яка досліджує, як принцип
 
   **Я створив issue на GitHub цього сайту, щоб переписати його не Реакт. Якщо хтось хоче зі мною, то пишіть коментар, я скину посилання на форк.**
 
