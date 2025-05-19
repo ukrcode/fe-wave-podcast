@@ -4,7 +4,7 @@ import path from "path";
 import minimist from "minimist";
 import { fileURLToPath } from "url";
 
-async function readFile() {
+async function convertHtmlFileToMd() {
   const args = minimist(process.argv.slice(2));
 
   // Resolve the directory of the current file
@@ -20,47 +20,12 @@ async function readFile() {
   const mdContent = NodeHtmlMarkdown.translate(file);
 
   await fs.writeFile(fullResultPath, mdContent, "utf8");
+
+  console.log(`CONVERED HTML FILE TO MD FILE
+    FROM 
+    ${fullFilePath} 
+    TO 
+    ${fullResultPath}`);
 }
 
-readFile();
-
-// Single file
-NodeHtmlMarkdown.translate(
-  /* html */ `<b>hello</b>`,
-  /* options (optional) */ {},
-  /* customTranslators (optional) */ undefined,
-  /* customCodeBlockTranslators (optional) */ undefined
-);
-
-// Multiple files
-NodeHtmlMarkdown.translate(
-  /* FileCollection */ {
-    "file1.html": `<b>hello</b>`,
-    "file2.html": `<b>goodbye</b>`,
-  },
-  /* options (optional) */ {},
-  /* customTranslators (optional) */ undefined,
-  /* customCodeBlockTranslators (optional) */ undefined
-);
-
-/* ********************************************************* *
- * Re-use
- * If using it several times, creating an instance saves time
- * ********************************************************* */
-
-const nhm = new NodeHtmlMarkdown(
-  /* options (optional) */ {},
-  /* customTransformers (optional) */ undefined,
-  /* customCodeBlockTranslators (optional) */ undefined
-);
-
-// Single file
-nhm.translate(/* html */ `<b>hello</b>`);
-
-// Multiple Files
-nhm.translate(
-  /* FileCollection */ {
-    "file1.html": `<b>hello</b>`,
-    "file2.html": `<b>goodbye</b>`,
-  }
-);
+convertHtmlFileToMd();
