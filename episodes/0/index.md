@@ -10,8 +10,7 @@ WIP
 
 ### **Веброзробка**
 
-- 🤔 [ Аргументи на користь мікрофронтендів і вихід за межі одного фреймворку.](https://thenewstack.io/the-case-for-microfrontends-and-moving-beyond-one-framework/)
-- 🤔 [ JSON відрізняється у різних мовах програмування](https://blog.dochia.dev/blog/json-isnt-json/)
+- 🤔 [ Аргументи на користь мікрофронтендів і вихід за межі одного фреймворку від Alexander T. Williams](https://thenewstack.io/the-case-for-microfrontends-and-moving-beyond-one-framework/)
 - 🤔 [ Чого я навчився про справжню вебдоступність, використовуючи зчитувач екрана](https://blog.logrocket.com/what-using-a-screen-reader-taught-me/)
 
 ### Інструменти**
@@ -19,7 +18,7 @@ WIP
 - 🤔 [ Chrome DevTools (MCP) для вашого AI-агента](https://developer.chrome.com/blog/chrome-devtools-mcp?hl=en)
 - 🤔 [ Netscape Navigator 2.0 випущено 30 років тому](https://www.jwz.org/blog/2025/09/netscape-navigator-2-0-was-released-30-years-ago-today/)
 - 🤔 [ Як Vite став основою сучасних фреймворків для фронтенду](https://thenewstack.io/how-vite-became-the-backbone-of-modern-frontend-frameworks/)
-- 🤔 [ Кращі практики безпеки NPM](https://github.com/bodadotsh/npm-security-best-practices)
+- 🤔 [ Кращі практики безпеки NPM від bodadotsh](https://github.com/bodadotsh/npm-security-best-practices)
 
 ### **CSS**
 
