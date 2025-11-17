@@ -8,35 +8,33 @@
 
 ## Front-end Digest № 126: зловживання CSS для трекінгу, Baseline в житті розробників та місце злочину UseEffect
 
-[ Підписатись на автораВідписатись від автора](javascript:;)
-
 Привіт, колеги. Мене звати Олександр, я займаюся фронтендом в компанії Zfort Group. Маю для вас свіжий дайджест з цікавими матеріалами зі світу фронтенду за останній тиждень.
 
 ### **Веброзробка**
 
-- [Принципи програмування для фронтендерів-самоучок](https://piccalil.li/blog/programming-principles-for-self-taught-front-end-developers/)
-- [Спрощені поля для одноразового пароля](https://cloudfour.com/thinks/simple-one-time-passcode-inputs/)
-- [Чому заголовки важливі в HTML: структура, доступність та SEO](https://www.sitepoint.com/headings-in-html-structure/)  
-  •[Безлад з кольором теми/тонуванням вкладок у Safari iOS26 при використанні елементів з фіксованою позицією](https://benfrain.com/ios26-safari-theme-color-tab-tinting-with-fixed-position-elements/)
+- ✅ [Принципи програмування для фронтендерів-самоучок](https://piccalil.li/blog/programming-principles-for-self-taught-front-end-developers/)
+- 📚 [Спрощені поля для одноразового пароля](https://cloudfour.com/thinks/simple-one-time-passcode-inputs/)
+- ✅ [Чому заголовки важливі в HTML: структура, доступність та SEO](https://www.sitepoint.com/headings-in-html-structure/)  
+- 📚 [Безлад з кольором теми/тонуванням вкладок у Safari iOS26 при використанні елементів з фіксованою позицією](https://benfrain.com/ios26-safari-theme-color-tab-tinting-with-fixed-position-elements/)
 
-- **Baseline**
+- ✅ **Baseline**
   - [Perfecting Baseline — думки співголови спільноти W3C WebDX Community Group щодо ролі Baseline в житті веброзробників](https://piccalil.li/blog/perfecting-baseline/)
-  - [Browserslist & Baseline](https://frontendmasters.com/blog/browserslist-baseline/)
-  - [ESLint плагін для Baseline JavaScript](https://github.com/3ru/eslint-plugin-baseline-js)
-  - [Жовтневий дайджест оновлень в Baseline](https://web.dev/blog/baseline-digest-oct-2025)
+  - ✅ [Browserslist & Baseline](https://frontendmasters.com/blog/browserslist-baseline/)
+  - ✅ [ESLint плагін для Baseline JavaScript](https://github.com/3ru/eslint-plugin-baseline-js)
+  - ✅ [Жовтневий дайджест оновлень в Baseline](https://web.dev/blog/baseline-digest-oct-2025)
 - **Інструменти**
-  - [Чому фронтенд має запускати AI моделі локально з ONNX](https://thenewstack.io/why-the-frontend-should-run-ai-models-locally-with-onnx/)
-  - [Організація файлів Figma для MVP та кодогенерації на основі ШІ](https://blog.logrocket.com/ux-design/design-to-code-with-figma-mcp/)
+  - 📚 [Чому фронтенд має запускати AI моделі локально з ONNX](https://thenewstack.io/why-the-frontend-should-run-ai-models-locally-with-onnx/)
+  - ✅ [Організація файлів Figma для MVP та кодогенерації на основі ШІ](https://blog.logrocket.com/ux-design/design-to-code-with-figma-mcp/)
 - **Продуктивність**
   - [Рейтинг продуктивності вебанімації](https://motion.dev/blog/web-animation-performance-tier-list)
-  - [Дієвий моніторинг вебпродуктивності](https://www.smashingmagazine.com/2025/11/effectively-monitoring-web-performance/)
+  - 📚 [Дієвий моніторинг вебпродуктивності](https://www.smashingmagazine.com/2025/11/effectively-monitoring-web-performance/)
 - **Анімація**
-  - [Створення нескінченної 3D-каруселі з реактивними градієнтними фоновими зображеннями](https://tympanus.net/codrops/2025/11/11/building-a-3d-infinite-carousel-with-reactive-background-gradients/)
-  - [View Transitions API: плавні анімації між станами DOM](https://www.trevorlasn.com/blog/view-transitions-api)
+  - 📚 [Створення нескінченної 3D-каруселі з реактивними градієнтними фоновими зображеннями](https://tympanus.net/codrops/2025/11/11/building-a-3d-infinite-carousel-with-reactive-background-gradients/)
+  - ✅ [View Transitions API: плавні анімації між станами DOM](https://www.trevorlasn.com/blog/view-transitions-api)
 
 ### **CSS**
 
-- [Невидимий трекінг у браузері: як зловживають каскадними таблицями стилів (CSS)](https://hackyourmom.com/kibervijna/nevydymyj-treking-u-brauzeri-yak-zlovzhyvayut-kaskadnymy-tablyczyamy-styliv-css/)
+- ✅ [Невидимий трекінг у браузері: як зловживають каскадними таблицями стилів (CSS)](https://hackyourmom.com/kibervijna/nevydymyj-treking-u-brauzeri-yak-zlovzhyvayut-kaskadnymy-tablyczyamy-styliv-css/)
 - [Анімація CSS ширини або висоти тепер не викликає анімацію головного потоку (в Chrome, якщо дотримано умов)](https://www.bram.us/2025/11/13/animating-css-width-or-height-no-longer-force-a-main-thread-animation-in-chrome-under-the-right-conditions/)
 - [Range Syntax для Style Queries](https://una.im/range-style-queries)
 - [Адаптивний список складених/накладених зображень](https://css-tip.com/responsive-stacked-img/)
