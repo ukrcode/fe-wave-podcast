@@ -2,72 +2,90 @@
 
 Мене звати Станіслав і я розробник з Києва. Ідея цього подкасту виникла після того, як я не знайшов нічого подібного українською мовою. Тут я буду розповідати про найважливіші новини фронтенду і веб-розробки.
 
-Цей випуск зроблено на основі [Front-end Digest № 125: «найбільш ненависна» функція CSS та «нудна» зрілість React](https://dou.ua/forums/topic/56488/) від [Olexander Smolianinov](https://dou.ua/users/dersmoll/),frontend director в [ZFORT Group](https://jobs.dou.ua/companies/zfort/). Обовʼязково підпишіться на його дайджест, там дуже багато корисної інформації.
+Цей випуск зроблено на основі [Front-end Digest № 126: зловживання CSS для трекінгу, Baseline в житті розробників та місце злочину UseEffect](https://dou.ua/forums/topic/56585/) від [Olexander Smolianinov](https://dou.ua/users/dersmoll/),frontend director в [ZFORT Group](https://jobs.dou.ua/companies/zfort/). Обовʼязково підпишіться на його дайджест, там дуже багато корисної інформації.
 
-Новини, які увійшли в випуск помічені ✅, решта — рекомендоване читання 📚. Я зробив таке розділення, бо їх забагато для  формату і таймінгу, в який хочу вкластися.
+Новини, які увійшли в випуск помічені ✅, решта — рекомендоване читання 📚. Я зробив таке розділення, бо їх забагато для формату і таймінгу, в який хочу вкластися.
 
-## Front-end Digest № 125: «найбільш ненависна» функція CSS та «нудна» зрілість React
+## Front-end Digest № 126: зловживання CSS для трекінгу, Baseline в житті розробників та місце злочину UseEffect
+
+[ Підписатись на автораВідписатись від автора](javascript:;)
+
+Привіт, колеги. Мене звати Олександр, я займаюся фронтендом в компанії Zfort Group. Маю для вас свіжий дайджест з цікавими матеріалами зі світу фронтенду за останній тиждень.
 
 ### **Веброзробка**
 
-- ✅ [Зростання популярності TypeScript в епоху штучного інтелекту: думки головного архітектора Андерса Хейлсберга](https://github.blog/developer-skills/programming-languages-and-frameworks/typescripts-rise-in-the-ai-era-insights-from-lead-architect-anders-hejlsberg/)
-- ✅ [Як обмежити швидкість певних запитів у Chrome DevTools](https://www.debugbear.com/blog/chrome-devtools-throttle-individual-request)
-- ✅ [Пояснення доступних переваг використання семантичних елементів HTML](https://css-tricks.com/explaining-the-accessible-benefits-of-using-semantic-html-elements/)
-- 📚 [Створення 3D-анімацій тексту з прокруткою за допомогою CSS і GSAP](https://tympanus.net/codrops/2025/11/04/creating-3d-scroll-driven-text-animations-with-css-and-gsap/)
-- ✅ [Чому фронтенд-розробникам слід відмовитися від темних патернів](https://thenewstack.io/why-frontend-developers-should-ditch-dark-patterns/)
-- 📚 [MSW: Server-Sent Events вже з нами!](https://mswjs.io/blog/server-sent-events-are-here)
+- [Принципи програмування для фронтендерів-самоучок](https://piccalil.li/blog/programming-principles-for-self-taught-front-end-developers/)
+- [Спрощені поля для одноразового пароля](https://cloudfour.com/thinks/simple-one-time-passcode-inputs/)
+- [Чому заголовки важливі в HTML: структура, доступність та SEO](https://www.sitepoint.com/headings-in-html-structure/)  
+  •[Безлад з кольором теми/тонуванням вкладок у Safari iOS26 при використанні елементів з фіксованою позицією](https://benfrain.com/ios26-safari-theme-color-tab-tinting-with-fixed-position-elements/)
+
+- **Baseline**
+  - [Perfecting Baseline — думки співголови спільноти W3C WebDX Community Group щодо ролі Baseline в житті веброзробників](https://piccalil.li/blog/perfecting-baseline/)
+  - [Browserslist & Baseline](https://frontendmasters.com/blog/browserslist-baseline/)
+  - [ESLint плагін для Baseline JavaScript](https://github.com/3ru/eslint-plugin-baseline-js)
+  - [Жовтневий дайджест оновлень в Baseline](https://web.dev/blog/baseline-digest-oct-2025)
+- **Інструменти**
+  - [Чому фронтенд має запускати AI моделі локально з ONNX](https://thenewstack.io/why-the-frontend-should-run-ai-models-locally-with-onnx/)
+  - [Організація файлів Figma для MVP та кодогенерації на основі ШІ](https://blog.logrocket.com/ux-design/design-to-code-with-figma-mcp/)
+- **Продуктивність**
+  - [Рейтинг продуктивності вебанімації](https://motion.dev/blog/web-animation-performance-tier-list)
+  - [Дієвий моніторинг вебпродуктивності](https://www.smashingmagazine.com/2025/11/effectively-monitoring-web-performance/)
+- **Анімація**
+  - [Створення нескінченної 3D-каруселі з реактивними градієнтними фоновими зображеннями](https://tympanus.net/codrops/2025/11/11/building-a-3d-infinite-carousel-with-reactive-background-gradients/)
+  - [View Transitions API: плавні анімації між станами DOM](https://www.trevorlasn.com/blog/view-transitions-api)
 
 ### **CSS**
 
-- 📚 [Instant snapport: Коротко про scroll-margin та scroll-padding](https://cssence.com/2025/scroll-margin-scroll-padding/)
-- 📚 [Анімація з затримкою на основі CSS-функцій sibling-\*](https://frontendmasters.com/blog/staggered-animation-with-css-sibling-functions/)
-- 📚 [Універсальний індикатор фокусу](https://css-tip.com/universal-focus/)
-- ✅ [Практичні приклади view transitions покращення вашого інтерфейсу.](https://piccalil.li/blog/some-practical-examples-of-view-transitions-to-elevate-your-ui/)
-- ✅ [Position: sticky: нюанси та несподіванки](https://frontendmasters.com/blog/the-weird-parts-of-position-sticky/)
-- 📚 [Ідеально вирівняні підказки: з усіх чотирьох боків](https://frontendmasters.com/blog/perfectly-pointed-tooltips-all-four-sides/)
-- ✅ [«Найбільш ненависна» функція CSS: tan()](https://css-tricks.com/the-most-hated-css-feature-tan/)
-- 📚 [Використання \`@starting-style\` в анімаціях, керованих прокручуванням](https://www.bram.us/2025/11/06/combining-scroll-driven-animations-with-starting-style/)
-- ✅ [В яких випадках застосовувати CSS text-wrap: balance, а в яких — text-wrap: pretty](https://blog.logrocket.com/css-text-wrap-balance-vs-text-wrap-pretty/)
-- ✅ [View Transition API](https://garden.bradwoods.io/notes/javascript/web-api/view-transition): інтерактивний туторіал
-- ✅ [HTML-елементи Select тепер дійсно можна стилізувати](https://salehmubashar.com/blog/html-selects-are-actually-styleable-now)
+- [Невидимий трекінг у браузері: як зловживають каскадними таблицями стилів (CSS)](https://hackyourmom.com/kibervijna/nevydymyj-treking-u-brauzeri-yak-zlovzhyvayut-kaskadnymy-tablyczyamy-styliv-css/)
+- [Анімація CSS ширини або висоти тепер не викликає анімацію головного потоку (в Chrome, якщо дотримано умов)](https://www.bram.us/2025/11/13/animating-css-width-or-height-no-longer-force-a-main-thread-animation-in-chrome-under-the-right-conditions/)
+- [Range Syntax для Style Queries](https://una.im/range-style-queries)
+- [Адаптивний список складених/накладених зображень](https://css-tip.com/responsive-stacked-img/)
+- [CSS Gamepad API: візуальне налагодження за допомогою CSS Layers](https://www.smashingmagazine.com/2025/11/css-gamepad-api-visual-debugging-css-layers/)
+- [Псевдокласи CSS :interest-invoker та :interest-target](https://www.trevorlasn.com/blog/css-interest-pseudo-classes)
+- [Заголовки: Семантика, Адаптивність і Стилізація — Ой лишенько!](https://css-tricks.com/headings-semantics-fluidity-and-styling-oh-my/)
+- [Бездоганно вирівняні підказки: по кутах](https://frontendmasters.com/blog/perfectly-pointed-tooltips-to-the-corners/)
+- [Створення генеративних CSS-світів](https://tympanus.net/codrops/2025/11/10/crafting-generative-css-worlds/)
 
 ### **JavaScript**
 
 - **Теорія**
-  - ✅ [Як працюють JavaScript Source Maps зсередини](https://www.polarsignals.com/blog/posts/2025/11/04/javascript-source-maps-internals)
-  - ✅ [Опанування URLPattern для міжплатформної маршрутизації](https://jsdev.space/underrated-js-features/)
-  - 📚 [Як працюють глобальний контекст виконання та тимчасова мертва зона в JavaScript](https://www.freecodecamp.org/news/global-execution-context-and-temporal-dead-zone-explained/)
+  - [Практичний посібник з Blobs, File API та оптимізації пам’яті](https://jsdev.space/howto/blob-file-handling-guide/)
+  - [Ланцюжок помилок в JavaScript: чистіше налагодження з Error.cause](https://allthingssmitty.com/2025/11/10/error-chaining-in-javascript-cleaner-debugging-with-error-cause/)
+  - [Не діліть рядки навмання: спробуйте Intl.Segmenter](https://dev.giuseppeciullo.it/stop-splitting-strings-the-wrong-way-discover-intlsegmenter)
 - **React**
-  - 📚 [Remix 3 відмовився від React: чи варто вам залишатися з ним](https://blog.logrocket.com/remix-3-ditched-react/)
-  - ✅ [Чому «нудна» зрілість React насправді є її головною перевагою](https://thenewstack.io/why-reacts-boring-maturity-is-actually-its-main-strength/)
-  - ✅ [Мій досвід роботи з Activity Component у React 19: що я дізнався (з прикладами коду)](https://javascript.plainenglish.io/tried-react-19s-activity-component-here-s-what-i-learned-b0f714003a65)
-  - ✅ [На 40% швидша взаємодія: як Wix вирішила проблему гідратації React за допомогою вибіркової гідратації та Suspense](https://www.wix.engineering/post/40-faster-interaction-how-wix-solved-react-s-hydration-problem-with-selective-hydration-and-suspen)
-- **Angular**
-  - 📚 [Аутентифікація Angular за допомогою файлів cookie за 10 хвилин](https://dev.to/this-is-angular/angular-authentication-with-cookies-in-10-minutes-41m8)
+  - [Як виправити недоліки маршрутизації React за допомогою React Router Middleware](https://blog.logrocket.com/fix-react-routing-loopholes-react-router-middleware/)
+  - [15 поширених помилок useEffect, яких слід уникати у ваших React-застосунках](https://blog.logrocket.com/15-common-useeffect-mistakes-react/)
+  - [Чи є рендеринг на стороні сервера Святим Граалем React](https://thenewstack.io/is-server-side-rendering-reacts-holy-grail/)
+  - [UseEffect у React — це місце злочину, покрите відбитками пальців](https://thenewstack.io/reacts-useeffect-is-a-crime-scene-covered-in-fingerprints/)
+- **Vue**
+  - [Створення MCP-сервера для Nuxt](https://nuxt.com/blog/building-nuxt-mcp)
+  - [Використання Vite з Vue та Django](https://wedgworth.dev/using-vite-with-vue-and-django/)
 
 ### **Фронтенд-меми**
 
-![](https://s.dou.ua/storage-files/image_895097259121762777871758_opt.jpg)
+![](https://s.dou.ua/storage-files/image_92025754141763381039509_opt.jpg)
 
-![](https://s.dou.ua/storage-files/image_594771391131762777871759.png)
+![](https://s.dou.ua/storage-files/image_247943760151763381039513_opt.jpg)
 
-![](https://s.dou.ua/storage-files/image_807825649141762777871761_opt.jpg)
+![](https://s.dou.ua/storage-files/image_915788383161763381039513.png)
 
-![](https://s.dou.ua/storage-files/image_920415131151762777871761.png)
+![](https://s.dou.ua/storage-files/image_504595557171763381039515_opt.jpg)
 
-![](https://s.dou.ua/storage-files/image_242127906161762777871762.png)
+![](https://s.dou.ua/storage-files/image_357488774181763381039516.png)
 
-![](https://s.dou.ua/storage-files/image_789751542171762777871762.png)
+![](https://s.dou.ua/storage-files/image_886258032191763381039519_opt.jpg)
 
-![](https://s.dou.ua/storage-files/image_598150424181762777871763.png)
+![](https://s.dou.ua/storage-files/image_887384575201763381039519.png)
 
-![](https://s.dou.ua/storage-files/image_802465393191762777871763.png)
+![](https://s.dou.ua/storage-files/image_9585098241763381039580_opt.jpg)
 
-![](https://s.dou.ua/storage-files/image_281890167201762777871763.png)
+![](https://s.dou.ua/storage-files/image_573455433251763381039585_opt.jpg)
 
-![](https://s.dou.ua/storage-files/image_470972417211762777871765_opt.jpg)
+![](https://s.dou.ua/storage-files/image_946218604211763381039522_opt.jpg)
 
-Подобається дайджест? Підписуйтесь акаунт автора вгорі сторінки, щоб[отримувати сповіщення про нові випуски](https://dou.ua/forums/topic/55743/) на пошту.
+![](https://s.dou.ua/storage-files/image_901878472221763381039523.png)
+
+![](https://s.dou.ua/storage-files/image_276493706231763381039523.png)
 
 [Підписуйтеся на телеграм-канал Front-end спільноти!](https://t.me/frontend%5Fdou)
 
