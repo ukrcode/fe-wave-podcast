@@ -35,26 +35,26 @@
 ### **CSS**
 
 - ✅ [Невидимий трекінг у браузері: як зловживають каскадними таблицями стилів (CSS)](https://hackyourmom.com/kibervijna/nevydymyj-treking-u-brauzeri-yak-zlovzhyvayut-kaskadnymy-tablyczyamy-styliv-css/)
-- [Анімація CSS ширини або висоти тепер не викликає анімацію головного потоку (в Chrome, якщо дотримано умов)](https://www.bram.us/2025/11/13/animating-css-width-or-height-no-longer-force-a-main-thread-animation-in-chrome-under-the-right-conditions/)
-- [Range Syntax для Style Queries](https://una.im/range-style-queries)
-- [Адаптивний список складених/накладених зображень](https://css-tip.com/responsive-stacked-img/)
-- [CSS Gamepad API: візуальне налагодження за допомогою CSS Layers](https://www.smashingmagazine.com/2025/11/css-gamepad-api-visual-debugging-css-layers/)
-- [Псевдокласи CSS :interest-invoker та :interest-target](https://www.trevorlasn.com/blog/css-interest-pseudo-classes)
-- [Заголовки: Семантика, Адаптивність і Стилізація — Ой лишенько!](https://css-tricks.com/headings-semantics-fluidity-and-styling-oh-my/)
-- [Бездоганно вирівняні підказки: по кутах](https://frontendmasters.com/blog/perfectly-pointed-tooltips-to-the-corners/)
-- [Створення генеративних CSS-світів](https://tympanus.net/codrops/2025/11/10/crafting-generative-css-worlds/)
+- 📚 ✅ [Анімація CSS ширини або висоти тепер не викликає анімацію головного потоку (в Chrome, якщо дотримано умов)](https://www.bram.us/2025/11/13/animating-css-width-or-height-no-longer-force-a-main-thread-animation-in-chrome-under-the-right-conditions/)
+- 📚 [Range Syntax для Style Queries](https://una.im/range-style-queries)
+- 📚 [Адаптивний список складених/накладених зображень](https://css-tip.com/responsive-stacked-img/)
+- ✅ [CSS Gamepad API: візуальне налагодження за допомогою CSS Layers](https://www.smashingmagazine.com/2025/11/css-gamepad-api-visual-debugging-css-layers/)
+- ✅ [Псевдокласи CSS :interest-invoker та :interest-target](https://www.trevorlasn.com/blog/css-interest-pseudo-classes)
+- 📚 ✅ [Заголовки: Семантика, Адаптивність і Стилізація — Ой лишенько!](https://css-tricks.com/headings-semantics-fluidity-and-styling-oh-my/)
+- 📚 [Бездоганно вирівняні підказки: по кутах](https://frontendmasters.com/blog/perfectly-pointed-tooltips-to-the-corners/)
+- ✅ [Створення генеративних CSS-світів](https://tympanus.net/codrops/2025/11/10/crafting-generative-css-worlds/)
 
 ### **JavaScript**
 
 - **Теорія**
-  - [Практичний посібник з Blobs, File API та оптимізації пам’яті](https://jsdev.space/howto/blob-file-handling-guide/)
-  - [Ланцюжок помилок в JavaScript: чистіше налагодження з Error.cause](https://allthingssmitty.com/2025/11/10/error-chaining-in-javascript-cleaner-debugging-with-error-cause/)
-  - [Не діліть рядки навмання: спробуйте Intl.Segmenter](https://dev.giuseppeciullo.it/stop-splitting-strings-the-wrong-way-discover-intlsegmenter)
+  - ✅ [Практичний посібник з Blobs, File API та оптимізації пам’яті](https://jsdev.space/howto/blob-file-handling-guide/)
+  - ✅ [Ланцюжок помилок в JavaScript: чистіше налагодження з Error.cause](https://allthingssmitty.com/2025/11/10/error-chaining-in-javascript-cleaner-debugging-with-error-cause/)
+  - ✅ [Не діліть рядки навмання: спробуйте Intl.Segmenter](https://dev.giuseppeciullo.it/stop-splitting-strings-the-wrong-way-discover-intlsegmenter)
 - **React**
   - [Як виправити недоліки маршрутизації React за допомогою React Router Middleware](https://blog.logrocket.com/fix-react-routing-loopholes-react-router-middleware/)
   - [15 поширених помилок useEffect, яких слід уникати у ваших React-застосунках](https://blog.logrocket.com/15-common-useeffect-mistakes-react/)
   - [Чи є рендеринг на стороні сервера Святим Граалем React](https://thenewstack.io/is-server-side-rendering-reacts-holy-grail/)
-  - [UseEffect у React — це місце злочину, покрите відбитками пальців](https://thenewstack.io/reacts-useeffect-is-a-crime-scene-covered-in-fingerprints/)
+  - ✅ [UseEffect у React — це місце злочину, покрите відбитками пальців](https://thenewstack.io/reacts-useeffect-is-a-crime-scene-covered-in-fingerprints/)
 - **Vue**
   - [Створення MCP-сервера для Nuxt](https://nuxt.com/blog/building-nuxt-mcp)
   - [Використання Vite з Vue та Django](https://wedgworth.dev/using-vite-with-vue-and-django/)
