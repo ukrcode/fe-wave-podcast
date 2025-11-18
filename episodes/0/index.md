@@ -51,13 +51,13 @@
   - ✅ [Ланцюжок помилок в JavaScript: чистіше налагодження з Error.cause](https://allthingssmitty.com/2025/11/10/error-chaining-in-javascript-cleaner-debugging-with-error-cause/)
   - ✅ [Не діліть рядки навмання: спробуйте Intl.Segmenter](https://dev.giuseppeciullo.it/stop-splitting-strings-the-wrong-way-discover-intlsegmenter)
 - **React**
-  - [Як виправити недоліки маршрутизації React за допомогою React Router Middleware](https://blog.logrocket.com/fix-react-routing-loopholes-react-router-middleware/)
-  - [15 поширених помилок useEffect, яких слід уникати у ваших React-застосунках](https://blog.logrocket.com/15-common-useeffect-mistakes-react/)
-  - [Чи є рендеринг на стороні сервера Святим Граалем React](https://thenewstack.io/is-server-side-rendering-reacts-holy-grail/)
+  - 📚 [Як виправити недоліки маршрутизації React за допомогою React Router Middleware](https://blog.logrocket.com/fix-react-routing-loopholes-react-router-middleware/)
+  - ✅ [15 поширених помилок useEffect, яких слід уникати у ваших React-застосунках](https://blog.logrocket.com/15-common-useeffect-mistakes-react/)
+  - ✅ [Чи є рендеринг на стороні сервера Святим Граалем React](https://thenewstack.io/is-server-side-rendering-reacts-holy-grail/)
   - ✅ [UseEffect у React — це місце злочину, покрите відбитками пальців](https://thenewstack.io/reacts-useeffect-is-a-crime-scene-covered-in-fingerprints/)
 - **Vue**
-  - [Створення MCP-сервера для Nuxt](https://nuxt.com/blog/building-nuxt-mcp)
-  - [Використання Vite з Vue та Django](https://wedgworth.dev/using-vite-with-vue-and-django/)
+  - ✅ [Створення MCP-сервера для Nuxt](https://nuxt.com/blog/building-nuxt-mcp)
+  - ✅ [Використання Vite з Vue та Django](https://wedgworth.dev/using-vite-with-vue-and-django/)
 
 ### **Фронтенд-меми**
 
