@@ -26,7 +26,7 @@
   - 📚 [Чому фронтенд має запускати AI моделі локально з ONNX](https://thenewstack.io/why-the-frontend-should-run-ai-models-locally-with-onnx/)
   - ✅ [Організація файлів Figma для MVP та кодогенерації на основі ШІ](https://blog.logrocket.com/ux-design/design-to-code-with-figma-mcp/)
 - **Продуктивність**
-  - [Рейтинг продуктивності вебанімації](https://motion.dev/blog/web-animation-performance-tier-list)
+  - 📚 [Рейтинг продуктивності вебанімації](https://motion.dev/blog/web-animation-performance-tier-list)
   - 📚 [Дієвий моніторинг вебпродуктивності](https://www.smashingmagazine.com/2025/11/effectively-monitoring-web-performance/)
 - **Анімація**
   - 📚 [Створення нескінченної 3D-каруселі з реактивними градієнтними фоновими зображеннями](https://tympanus.net/codrops/2025/11/11/building-a-3d-infinite-carousel-with-reactive-background-gradients/)
@@ -35,12 +35,12 @@
 ### **CSS**
 
 - ✅ [Невидимий трекінг у браузері: як зловживають каскадними таблицями стилів (CSS)](https://hackyourmom.com/kibervijna/nevydymyj-treking-u-brauzeri-yak-zlovzhyvayut-kaskadnymy-tablyczyamy-styliv-css/)
-- 📚 ✅ [Анімація CSS ширини або висоти тепер не викликає анімацію головного потоку (в Chrome, якщо дотримано умов)](https://www.bram.us/2025/11/13/animating-css-width-or-height-no-longer-force-a-main-thread-animation-in-chrome-under-the-right-conditions/)
+- 📚 [Анімація CSS ширини або висоти тепер не викликає анімацію головного потоку (в Chrome, якщо дотримано умов)](https://www.bram.us/2025/11/13/animating-css-width-or-height-no-longer-force-a-main-thread-animation-in-chrome-under-the-right-conditions/)
 - 📚 [Range Syntax для Style Queries](https://una.im/range-style-queries)
 - 📚 [Адаптивний список складених/накладених зображень](https://css-tip.com/responsive-stacked-img/)
 - ✅ [CSS Gamepad API: візуальне налагодження за допомогою CSS Layers](https://www.smashingmagazine.com/2025/11/css-gamepad-api-visual-debugging-css-layers/)
 - ✅ [Псевдокласи CSS :interest-invoker та :interest-target](https://www.trevorlasn.com/blog/css-interest-pseudo-classes)
-- 📚 ✅ [Заголовки: Семантика, Адаптивність і Стилізація — Ой лишенько!](https://css-tricks.com/headings-semantics-fluidity-and-styling-oh-my/)
+- 📚 [Заголовки: Семантика, Адаптивність і Стилізація — Ой лишенько!](https://css-tricks.com/headings-semantics-fluidity-and-styling-oh-my/)
 - 📚 [Бездоганно вирівняні підказки: по кутах](https://frontendmasters.com/blog/perfectly-pointed-tooltips-to-the-corners/)
 - ✅ [Створення генеративних CSS-світів](https://tympanus.net/codrops/2025/11/10/crafting-generative-css-worlds/)
 
