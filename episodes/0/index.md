@@ -20,7 +20,7 @@
 - ✅ **Baseline**
   - [Perfecting Baseline — думки співголови спільноти W3C WebDX Community Group щодо ролі Baseline в житті веброзробників](https://piccalil.li/blog/perfecting-baseline/)
   - ✅ [Browserslist & Baseline](https://frontendmasters.com/blog/browserslist-baseline/)
-  - ✅ [ESLint плагін для Baseline JavaScript](https://github.com/3ru/eslint-plugin-baseline-js)
+  - 📚 [ESLint плагін для Baseline JavaScript](https://github.com/3ru/eslint-plugin-baseline-js)
   - ✅ [Жовтневий дайджест оновлень в Baseline](https://web.dev/blog/baseline-digest-oct-2025)
 - **Інструменти**
   - 📚 [Чому фронтенд має запускати AI моделі локально з ONNX](https://thenewstack.io/why-the-frontend-should-run-ai-models-locally-with-onnx/)
@@ -42,7 +42,7 @@
 - ✅ [Псевдокласи CSS :interest-invoker та :interest-target](https://www.trevorlasn.com/blog/css-interest-pseudo-classes)
 - 📚 [Заголовки: Семантика, Адаптивність і Стилізація — Ой лишенько!](https://css-tricks.com/headings-semantics-fluidity-and-styling-oh-my/)
 - 📚 [Бездоганно вирівняні підказки: по кутах](https://frontendmasters.com/blog/perfectly-pointed-tooltips-to-the-corners/)
-- ✅ [Створення генеративних CSS-світів](https://tympanus.net/codrops/2025/11/10/crafting-generative-css-worlds/)
+- 📚 [Створення генеративних CSS-світів](https://tympanus.net/codrops/2025/11/10/crafting-generative-css-worlds/)
 
 ### **JavaScript**
 

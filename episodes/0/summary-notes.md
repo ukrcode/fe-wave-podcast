@@ -42,6 +42,8 @@
 
 Стаття Patrick Brosset з команди WebDX розглядає Baseline — новий стандарт для визначення підтримки веб-функцій браузерами, його переваги та обмеження.
 
+Web Platform Baseline brings clarity to information about browser support for web platform features.
+
 **Що таке Baseline:**
 - **Три стани**: Not Baseline (функція не підтримується всіма основними браузерами), Newly Available (підтримується в останніх версіях), Widely Available (підтримується 2.5+ років)
 - **Базові браузери**: Chrome, Safari (macOS/iOS), Firefox, Edge
@@ -61,6 +63,7 @@
 - Widely Available → можна використовувати зараз, перевіривши MDN для деталей
 - Newly Available → час дізнатися про функцію, можлива підготовка з фолбеками
 - Not Baseline → не ігнорувати, відстежувати нові функції для майбутнього використання
+- Baseline year feature sets, for example Baseline 2020, include all features that were Newly available at the end of the specified year.
 
 Baseline — це відправна точка для прийняття рішень, а не остаточна відповідь про можливість використання функції.
 
@@ -361,57 +364,6 @@ Trevor Lasn представляє нові CSS псевдокласи що до
 - Параметр `possible` для edge cases з focusability (відкладено)
 
 Це значний крок до декларативних інтерактивних UI в CSS. Коли браузери почнуть імплементацію, розробники зможуть створювати складні інтерактивні компоненти без JavaScript.
-
----
-
-### ✅ Створення генеративних CSS-світів
-
-**Джерело:** [Crafting Generative CSS Worlds](https://tympanus.net/codrops/2025/11/10/crafting-generative-css-worlds/)
-
-Agustin Capeletto показує як створити ізометричний 3D терейн генератор використовуючи тільки CSS та stacked grids техніку.
-
-**Основа — Stacked Grids:**
-```css
-.scene { perspective: 8000px; }
-.floor { transform: rotateX(65deg) rotate(45deg); }
-.z { 
-  display: grid;
-  transform: translateZ(calc(25px * level));
-}
-```
-
-**Нові shape primitives:**
-- **Flat**: горизонтальна площина
-- **Ramp**: нахил 26.565° (arctan(0.5))
-- **Wedge**: увігнута сполука двох slopes
-- **Spike**: опукла сполука (пік)
-
-Кожен shape підтримує 2:1 dimetric систему (50×50×25px) для консистентності.
-
-**Освітлення:**
-- Фіксоване джерело світла на заході (180°)
-- 4 рівні яскравості (.l-1 до .l-4) залежно від кута
-- Baked в текстури для продуктивності
-
-**Генерація терейну:**
-- Heightmap з simplex-noise
-- Класифікатор для вибору правильного shape для кожної клітинки
-- Правила для 8 сусідів × 4 обертання = сотні комбінацій
-- Ручні override для складних перетинів
-
-**Оптимізація:**
-- Безпечний ліміт: 32×32×12 grid
-- Заміна clip-path на PNG sprites (проблеми з repaint)
-- GPU-accelerated рендеринг snapshots
-- Layer borders та paint flashing в DevTools
-
-**Використання:**
-- Зміна одного класу `.scene` → зміна всієї біоми
-- Ізометричні веб-ігри
-- Інтерактивні experiences в браузері
-- Альтернатива WebGL для простих 3D проектів
-
-Повний код на [terra.layoutit.com](https://terra.layoutit.com/). Наступний проект: дзеркальні вертикальні grid для створення "CSS сфери".
 
 ---
 
