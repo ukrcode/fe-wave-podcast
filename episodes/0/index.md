@@ -13,7 +13,7 @@
 ### **Веброзробка**
 
 - ✅ ⭐ [WebAssembly продовжує розширювати можливості фронтенду через 10 років після появи.](https://thenewstack.io/webassembly-still-expanding-frontend-uses-10-years-later/)
-- [Frontend-застосунки з пріоритетом офлайн-режиму у 2025: IndexedDB та SQLite у браузері та за його межами.](https://blog.logrocket.com/offline-first-frontend-apps-2025-indexeddb-sqlite/)
+- 📚 [Frontend-застосунки з пріоритетом офлайн-режиму у 2025: IndexedDB та SQLite у браузері та за його межами.](https://blog.logrocket.com/offline-first-frontend-apps-2025-indexeddb-sqlite/)
 - ✅ [Чи може штучний інтелект писати специфікації доступності.](https://gerireid.com/blog/can-ai-write-accessibility-specs/)
 - ✅ ⭐ [Тестування HTML-вебкомпонентів з Light DOM: це простіше, ніж здається!](https://cloudfour.com/thinks/testing-html-light-dom-web-components-easier-than-expected/)
 
@@ -24,14 +24,14 @@
 - **Ефекти**
   - 📚 [Як створити кінематографічні 3D-ефекти прокрутки за допомогою GSAP.](https://tympanus.net/codrops/2025/11/19/how-to-build-cinematic-3d-scroll-experiences-with-gsap/)
   - 📚 [Імітація двофазних переходів між відображеннями за допомогою precommitHandler Navigation API.](https://www.bram.us/2025/11/17/faking-two-phase-view-transitions-with-the-navigation-apis-precommithandler/)
-  - ✅ [Найкращий спосіб створити ефект паралаксного прокручування в 2026 році.](https://www.builder.io/blog/parallax-scrolling-effect)
+  - 📚 [Найкращий спосіб створити ефект паралаксного прокручування в 2026 році.](https://www.builder.io/blog/parallax-scrolling-effect)
 
 ### **CSS**
 
 - 📚 [Адаптивний міжлітерний інтервал.](https://cloudfour.com/thinks/responsive-letter-spacing/)
 - 📚 [Створення 3D-зображень у CSS за допомогою шарування.](https://frontendmasters.com/blog/how-to-create-3d-images-in-css-with-the-layered-pattern/)
-- ✅ 📚 [Токени Keyframes: Стандартизуємо анімацію між проєктами.](https://www.smashingmagazine.com/2025/11/keyframes-tokens-standardizing-animation-across-projects/)
-- ✅ 📚 [Grid: використання grid-template-areas для візуалізації розмітки коду.](https://webkit.org/blog/17620/grid-how-grid-template-areas-offer-a-visual-solution-for-your-code/)
+- 📚 [Токени Keyframes: Стандартизуємо анімацію між проєктами.](https://www.smashingmagazine.com/2025/11/keyframes-tokens-standardizing-animation-across-projects/)
+- 📚 [Grid: використання grid-template-areas для візуалізації розмітки коду.](https://webkit.org/blog/17620/grid-how-grid-template-areas-offer-a-visual-solution-for-your-code/)
 - ✅ [Як створити модульну та підтримувану CSS-архітектуру з @layer.](https://techhub.iodigital.com/articles/how-to-create-a-modular-css-architecture-with-layer)
 - 📚 [Побудова багатоступеневого графіку за допомогою сучасного CSS: grid, subgrid, round() і mod().](https://9elements.com/blog/building-a-multi-stage-timetable-with-modern-css-using-grid-subgrid-round-and-mod/)
 - ✅ [CSS random(): глибше розуміння через експерименти.](https://frontendmasters.com/blog/more-css-random-learning-through-experiments/)
