@@ -1,78 +1,67 @@
-# #0: Пілотний епізод: 
+# #0: Пілотний епізод:
 
-Мене звати Станіслав і я розробник з Києва. Ідея цього подкасту виникла після того, як я не знайшов нічого подібного українською мовою. Тут я буду розповідати про найважливіші новини фронтенду і веб-розробки.
+Мене звати Станіслав і я розробник з Києва. Ідея цього подкасту виникла після того, як я не знайшов нічого подібного українською мовою. Тут кожного тижня я буду розповідати про найважливіші новини фронтенду і веб-розробки.
 
-Цей випуск зроблено на основі [Front-end Digest № 127: анонс Angular v21, кінематографічні 3D-ефекти та random() в CSS](https://dou.ua/forums/topic/56697/) від [Olexander Smolianinov](https://dou.ua/users/dersmoll/),frontend director в [ZFORT Group](https://jobs.dou.ua/companies/zfort/). Обовʼязково підпишіться на його дайджест, там дуже багато корисної інформації.
+Цей випуск зроблено на основі [Front-end Digest № 128: Ripple замість React, лейаути з CSS Subgrid та CSS-in-JS як зрада здорового глузду](https://dou.ua/forums/topic/56795/) від [Olexander Smolianinov](https://dou.ua/users/dersmoll/),frontend director в [ZFORT Group](https://jobs.dou.ua/companies/zfort/). Обовʼязково підпишіться на його дайджест, там дуже багато корисної інформації.
+
+Нижче наведено оригінальний текст дайджесту з невеличким
 
 Новини, які увійшли в випуск помічені ✅, решта — рекомендоване читання 📚. Я зробив таке розділення, бо їх забагато для формату і таймінгу, в який хочу вкластися.
 
-# Front-end Digest № 127: анонс Angular v21, кінематографічні 3D-ефекти та random() в CSS
-
-Привіт, колеги. Мене звати Олександр, я займаюся фронтендом в компанії Zfort Group. Маю для вас свіжий дайджест з цікавими матеріалами зі світу фронтенду за останній тиждень.
+## Front-end Digest № 128: Ripple замість React, лейаути з CSS Subgrid та CSS-in-JS як зрада здорового глузду
 
 ### **Веброзробка**
 
-- ✅ ⭐ [WebAssembly продовжує розширювати можливості фронтенду через 10 років після появи.](https://thenewstack.io/webassembly-still-expanding-frontend-uses-10-years-later/)
-- 📚 [Frontend-застосунки з пріоритетом офлайн-режиму у 2025: IndexedDB та SQLite у браузері та за його межами.](https://blog.logrocket.com/offline-first-frontend-apps-2025-indexeddb-sqlite/)
-- ✅ [Чи може штучний інтелект писати специфікації доступності.](https://gerireid.com/blog/can-ai-write-accessibility-specs/)
-- ✅ ⭐ [Тестування HTML-вебкомпонентів з Light DOM: це простіше, ніж здається!](https://cloudfour.com/thinks/testing-html-light-dom-web-components-easier-than-expected/)
-
-- **Інструменти**
-  - 📚 [Альтернативи GTmetrix.](https://gtmetrix.com/blog/gtmetrix-alternatives/)
-  - [Шість неочевидних речей, які можна робити в Devtools Chrome, частина 1.](https://www.readwriterachel.com/things-i-learned/2025/11/09/devtools-1.html)
-  - ✅ [Як використовувати ChatGPT Atlas для налагодження, тестування та інших завдань у фронтенді.](https://blog.logrocket.com/chatgpt-atlas-for-frontend/)
-- **Ефекти**
-  - 📚 [Як створити кінематографічні 3D-ефекти прокрутки за допомогою GSAP.](https://tympanus.net/codrops/2025/11/19/how-to-build-cinematic-3d-scroll-experiences-with-gsap/)
-  - 📚 [Імітація двофазних переходів між відображеннями за допомогою precommitHandler Navigation API.](https://www.bram.us/2025/11/17/faking-two-phase-view-transitions-with-the-navigation-apis-precommithandler/)
-  - 📚 [Найкращий спосіб створити ефект паралаксного прокручування в 2026 році.](https://www.builder.io/blog/parallax-scrolling-effect)
+- [Новини вебплатформи за листопад](https://web.dev/blog/web-platform-11-2025)  
+- [Що нового в Astro — листопад 2025](https://astro.build/blog/whats-new-november-2025/)  
+- [Черв’як Shai-Hulud 2.0 в npm: аналіз та що потрібно знати](https://securitylabs.datadoghq.com/articles/shai-hulud-2.0-npm-worm/)  
+- [The Performance Inequality Gap, 2026](https://infrequently.org/2025/11/performance-inequality-gap-2026/)  
+- [Розробка власного роутера з UrlPattern](https://jschof.dev/posts/2025/11/build-your-own-router/)  
+- [Будуємо моноліт: компоновані системи рендерингу для грандіозної WebGL-історії з 13 епізодів](https://tympanus.net/codrops/2025/11/29/building-the-monolith-composable-rendering-systems-for-a-13-scene-webgl-epic/)  
+- [Як творчий процес формує WebGL-портфоліо](https://tympanus.net/codrops/2025/11/27/letting-the-creative-process-shape-a-webgl-portfolio/)
 
 ### **CSS**
 
-- 📚 [Адаптивний міжлітерний інтервал.](https://cloudfour.com/thinks/responsive-letter-spacing/)
-- 📚 [Створення 3D-зображень у CSS за допомогою шарування.](https://frontendmasters.com/blog/how-to-create-3d-images-in-css-with-the-layered-pattern/)
-- 📚 [Токени Keyframes: Стандартизуємо анімацію між проєктами.](https://www.smashingmagazine.com/2025/11/keyframes-tokens-standardizing-animation-across-projects/)
-- 📚 [Grid: використання grid-template-areas для візуалізації розмітки коду.](https://webkit.org/blog/17620/grid-how-grid-template-areas-offer-a-visual-solution-for-your-code/)
-- ✅ [Як створити модульну та підтримувану CSS-архітектуру з @layer.](https://techhub.iodigital.com/articles/how-to-create-a-modular-css-architecture-with-layer)
-- 📚 [Побудова багатоступеневого графіку за допомогою сучасного CSS: grid, subgrid, round() і mod().](https://9elements.com/blog/building-a-multi-stage-timetable-with-modern-css-using-grid-subgrid-round-and-mod/)
-- ✅ [CSS random(): глибше розуміння через експерименти.](https://frontendmasters.com/blog/more-css-random-learning-through-experiments/)
-- ✅ [«Найбільш ненависна» функція CSS: asin(), acos(), atan() та atan2().](https://css-tricks.com/the-most-hated-css-feature-asin-acos-atan-and-atan2/)
+- [Абсолютно нові компонування з CSS Subgrid](https://www.joshwcomeau.com/css/subgrid/)  
+- [Знайомство з CSS-інструкціями \`if\` та умовною логікою](https://markodenic.com/introduction-to-css-if-statements-and-conditional-logic/)  
+- [CSS-in-JS: зрадницький удар по глузду у фронтенді](https://thenewstack.io/css-in-js-the-great-betrayal-of-frontend-sanity/)  
+- [Як додавати та видаляти елементи з нативної CSS каруселі (...за допомогою CSS)](https://frontendmasters.com/blog/how-to-add-and-remove-items-from-a-native-css-carousel-with-css/)  
+- [Формування допоміжних класів із дизайн-токенів із застосуванням Style Dictionary](https://www.alwaystwisted.com/articles/a-design-tokens-workflow-part-13)  
+- [Використання overscroll-behavior: contain для запобігання прокручування сторінки при відкритому <dialog>](https://www.bram.us/2025/11/25/use-overscroll-behavior-contain-to-prevent-a-page-from-scrolling-while-a-dialog-is-open/)  
+- [Про успадкування та спільне використання значень властивостей](https://css-tricks.com/on-inheriting-and-sharing-property-values/)  
+- [Створення оригінальних кутів з CSS corner-shape](https://blog.logrocket.com/create-fancy-corners-css/)  
+- [CSS-фігури, що враховують напрямок](https://css-tip.com/direction-aware-shapes/)  
+- [light-dark() не завжди збігається з prefers-color-scheme](https://www.stefanjudis.com/today-i-learned/light-dark-isnt-the-same-as-prefers-color-scheme/)  
+- [Використання CSS для усунення ілюзії ірадіації](https://nerdy.dev/adjust-perceived-typepace-weight-for-dark-mode-without-layout-shift)
 
 ### **JavaScript**
 
-- ✅ [Вільні від збірки: перехід на нативні JavaScript-модулі.](https://www.djangoproject.com/weblog/2025/nov/19/going-build-free-with-native-javascript-modules/)
-- ✅ [Боротьба з витоками пам’яті в JavaScript PDF-візуалізаторах: рекомендовані практики та інструкції з налагодження.](https://www.syncfusion.com/blogs/post/memory-leaks-in-javascript-pdf-viewer)
-- ✅ [Brimstone — новий JavaScript рушій, написаний на Rust.](https://github.com/Hans-Halverson/brimstone)
-- 📚 [Реалізація Wordle в LibreOffice за допомогою макросів JavaScript.](https://bojidar-bg.dev/blog/2025-11-11-wordle-libreoffice/)
-
-- **React**
-  - ✅ ⭐ [React 19.2: Асинхронний перехід нарешті став реальністю.](https://blog.logrocket.com/react-19-2-the-async-shift/)
-  - ✅ [Чи є React(tanstack) Query занадто упередженим? Глибоке занурення: практичні методи отримання даних у реальному житті — Розділ 1.](https://burakdev.com/blogs/is-react-tanstack-query-too-biased-deep-dive-real-life-data-fetching-practices-chapter-1)
-  - ✅ [Піраміда React-компонентів: криза надмірної розробки.](https://thenewstack.io/the-react-component-pyramid-scheme-an-over-engineering-crisis/)
-  - 📚 [Штучний інтелект у реальному часі в Next.js: як передавати відповіді за допомогою Vercel AI SDK.](https://blog.logrocket.com/nextjs-vercel-ai-sdk-streaming/)
-- **Angular**
-  - ✅ ⭐ [Анонс Angular v21.](https://blog.angular.dev/announcing-angular-v21-57946c34f14b)  
-    - [Що нового в Angular 21.0.](https://blog.ninja-squad.com/2025/11/20/what-is-new-angular-21.0)
+- [Чому варто використовувати React](https://adactio.com/journal/22265)  
+- [State of React 2025](https://survey.devographics.com/en-US/survey/state-of-react/2025)  
+- [Ripple замість React? Оцінка найновішого JS-фреймворку](https://blog.logrocket.com/ripple-over-react-js-framework/)  
+- [Вступ до Nest.js: розробка серверного JavaScript на Node.js](https://www.infoworld.com/article/4091407/intro-to-nest-js-server-side-javascript-development-on-node.html)  
+- [Як спростити ваші React-компоненти за допомогою похідного стану.](https://www.freecodecamp.org/news/simplify-react-components-with-derived-state/)
 
 ### **Фронтенд-меми**
 
-![](https://s.dou.ua/storage-files/image_304001164131763979382283.png)
+![](https://s.dou.ua/storage-files/image_120979254131764592685230_opt.jpg)
 
-![](https://s.dou.ua/storage-files/image_554442636141763979382285_opt.jpg)
+![](https://s.dou.ua/storage-files/image_546950450141764592685232_opt.jpg)
 
-![](https://s.dou.ua/storage-files/image_116840704151763979382286.png)
+![](https://s.dou.ua/storage-files/image_547675862151764592685232.png)
 
-![](https://s.dou.ua/storage-files/image_900375659161763979382287.png)
+![](https://s.dou.ua/storage-files/image_251154571161764592685234_opt.jpg)
 
-![](https://s.dou.ua/storage-files/image_685117522171763979382287.png)
+![](https://s.dou.ua/storage-files/image_2807474171764592685234.png)
 
-![](https://s.dou.ua/storage-files/image_730936401181763979382288.png)
+![](https://s.dou.ua/storage-files/image_929820738181764592685236_opt.jpg)
 
-![](https://s.dou.ua/storage-files/image_822739216191763979382288.png)
+![](https://s.dou.ua/storage-files/image_655064810211764592685262_opt.jpg)
 
-![](https://s.dou.ua/storage-files/image_877055947201763979382289.png)
+![](https://s.dou.ua/storage-files/image_182797652221764592685280_opt.jpg)
 
-![](https://s.dou.ua/storage-files/image_995713210211763979382290.png)
+![](https://s.dou.ua/storage-files/image_124966614191764592685238_opt.jpg)
 
-![](https://s.dou.ua/storage-files/image_412219699221763979382290.png)
+![](https://s.dou.ua/storage-files/image_313699201201764592685238.png)
 
-![](https://s.dou.ua/storage-files/image_463780150231763979382291.png)
+![](https://s.dou.ua/storage-files/image_352429130231764592685283_opt.jpg)
