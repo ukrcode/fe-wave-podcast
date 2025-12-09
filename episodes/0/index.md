@@ -12,26 +12,26 @@
 
 ### **Веброзробка**
 
-- [Новий вид клікджекінг-атаки, що базується на CSS і SVG](https://www.theregister.com/2025/12/05/css%5Fsvg%5Fclickjacking/)  
-- [SVG Filters — Clickjacking 2.0](https://lyra.horse/blog/2025/12/svg-clickjacking/)  
-- [Проблеми верхнього шару: спливаюче вікно чи діалогове?](https://htmhell.dev/adventcalendar/2025/1/)  
-- [Два портфоліо, один процес: де поєднуються дизайн, рух і код](https://tympanus.net/codrops/2025/12/02/two-portfolios-one-process-where-design-motion-and-code-come-together/)
+- ✅ [Новий вид клікджекінг-атаки, що базується на CSS і SVG](https://www.theregister.com/2025/12/05/css%5Fsvg%5Fclickjacking/)  
+- ✅ [SVG Filters — Clickjacking 2.0](https://lyra.horse/blog/2025/12/svg-clickjacking/)  
+- ✅ [Проблеми верхнього шару: спливаюче вікно чи діалогове?](https://htmhell.dev/adventcalendar/2025/1/)  
+- 📚 [Два портфоліо, один процес: де поєднуються дизайн, рух і код](https://tympanus.net/codrops/2025/12/02/two-portfolios-one-process-where-design-motion-and-code-come-together/)
 
 - **Інструменти**  
-  - [Bun приєднується до Anthropic](https://bun.com/blog/bun-joins-anthropic)  
-  - [Новинки в ViteLand: підсумки листопада 2025 року](https://voidzero.dev/posts/whats-new-nov-2025)  
-  - [Vite 8 Beta: The Rolldown-powered Vite ​](https://vite.dev/blog/announcing-vite8-beta)  
-  - [Oxfmt: Oxc Formatter Alpha](https://oxc.rs/blog/2025-12-01-oxfmt-alpha.html)  
-  - [Bun 1.3: чи настав час розробникам переосмислити стек Node](https://blog.logrocket.com/bun-javascript-runtime-taking-node-js-deno/)
+  - ✅ [Bun приєднується до Anthropic](https://bun.com/blog/bun-joins-anthropic)  
+  - ✅ [Новинки в ViteLand: підсумки листопада 2025 року](https://voidzero.dev/posts/whats-new-nov-2025)  
+  - 📚 [Vite 8 Beta: The Rolldown-powered Vite ​](https://vite.dev/blog/announcing-vite8-beta)  
+  - 📚 [Oxfmt: Oxc Formatter Alpha](https://oxc.rs/blog/2025-12-01-oxfmt-alpha.html)  
+  - 📚 [Bun 1.3: чи настав час розробникам переосмислити стек Node](https://blog.logrocket.com/bun-javascript-runtime-taking-node-js-deno/)
 - **Продуктивність**  
-  - [Огляд 2025 року: що нового у вебпродуктивності](https://www.debugbear.com/blog/2025-in-web-performance)  
-  - [Вебпродуктивність 2025 року: перехід від оптимізації до прогнозування](https://calendar.perfplanet.com/2025/web-performance-2025-the-shift-from-optimization-to-prediction/)  
-  - [Шаблон розробки «Fast by Default»](https://fastbydefault.com/)  
-  - [NoLoJS: зменшення навантаження JS за допомогою HTML та CSS](https://calendar.perfplanet.com/2025/nolojs-reducing-js-workload-html-css/)
+  - ✅ [Огляд 2025 року: що нового у вебпродуктивності](https://www.debugbear.com/blog/2025-in-web-performance)  
+  - ✅ [Вебпродуктивність 2025 року: перехід від оптимізації до прогнозування](https://calendar.perfplanet.com/2025/web-performance-2025-the-shift-from-optimization-to-prediction/)  
+  - ✅ [Шаблон розробки «Fast by Default»](https://fastbydefault.com/)  
+  - ✅ [NoLoJS: зменшення навантаження JS за допомогою HTML та CSS](https://calendar.perfplanet.com/2025/nolojs-reducing-js-workload-html-css/)
 
 ### **CSS**
 
-- [Загадка глибини стека карток](https://frontendmasters.com/blog/the-deep-card-conundrum/)  
+- 📚 [Загадка глибини стека карток](https://frontendmasters.com/blog/the-deep-card-conundrum/)  
 - [Запасний варіант для view transitions: DOMContentLoaded + requestAnimationFrame()](https://piccalil.li/blog/a-view-transitions-fallback-domcontentloaded-requestanimationframe/)  
 - [Недоліки scrollbar-gutter: stable; (і один дивний трюк)](https://frontendmasters.com/blog/the-downsides-of-scrollbar-gutter-stable-and-one-weird-trick/)  
 - [Розширення для розмиття неквадратних зображень](https://frontendmasters.com/blog/non-square-image-blur-extensions/)  
@@ -44,7 +44,7 @@
 
 ### **JavaScript**
 
-- [AdventJS — різдвяний кодувальний челендж: 24 вправи до Різдва](https://adventjs.dev/)  
+- ✅ [AdventJS — різдвяний кодувальний челендж: 24 вправи до Різдва](https://adventjs.dev/)  
 - [Припиніть використовувати JavaScript для вирішення проблем CSS](https://blog.logrocket.com/stop-using-js-for-css/)  
 - [Нюанси типізації JavaScript за допомогою JSDoc](https://thathtml.blog/2025/12/nuances-of-typing-with-jsdoc/)  
 - [Javascript-синтезатор дронового ембієнтного шуму: коли нестабільність стає перевагою, а не дефектом](https://bs.stranno.su/drone-ambient-noise-synthesizer/)  
@@ -57,11 +57,11 @@
   - [Як проводити юніт-тестування Vue composable з TypeScript](https://johnfraney.ca/blog/how-to-unit-test-a-vue-composable-with-typescript/)  
   - [Теорія категорій для розробників JavaScript/TypeScript](https://ibrahimcesar.cloud/blog/category-theory-for-javascript-typescript-developers/)
 - **React**  
-  - [Критична вразливість безпеки в React Server Components](https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components)  
+  - ✅ [Критична вразливість безпеки в React Server Components](https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components)  
   - [React змінився, ваші хуки теж мають змінитися](https://allthingssmitty.com/2025/12/01/react-has-changed-your-hooks-should-too/)  
-  - [Припиніть звинувачувати React у своїх проблемах з управлінням станом](https://thenewstack.io/stop-blaming-react-for-your-state-management-hangover/)  
+  - ✅ [Припиніть звинувачувати React у своїх проблемах з управлінням станом](https://thenewstack.io/stop-blaming-react-for-your-state-management-hangover/)  
   - [Настала нова ера React: ось що вам потрібно знати](https://blog.logrocket.com/the-next-era-of-react/)  
-  - [Критичні помилки RSC в React і Next.js дозволяють виконувати віддалений код без аутентифікації](https://thehackernews.com/2025/12/critical-rsc-bugs-in-react-and-nextjs.html)
+  - ✅ [Критичні помилки RSC в React і Next.js дозволяють виконувати віддалений код без аутентифікації](https://thehackernews.com/2025/12/critical-rsc-bugs-in-react-and-nextjs.html)
 
 ### **Фронтенд-меми**
 
