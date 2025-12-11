@@ -32,11 +32,11 @@
 ### **CSS**
 
 - 📚 [Загадка глибини стека карток](https://frontendmasters.com/blog/the-deep-card-conundrum/)  
-- [Запасний варіант для view transitions: DOMContentLoaded + requestAnimationFrame()](https://piccalil.li/blog/a-view-transitions-fallback-domcontentloaded-requestanimationframe/)  
-- [Недоліки scrollbar-gutter: stable; (і один дивний трюк)](https://frontendmasters.com/blog/the-downsides-of-scrollbar-gutter-stable-and-one-weird-trick/)  
-- [Розширення для розмиття неквадратних зображень](https://frontendmasters.com/blog/non-square-image-blur-extensions/)  
-- [Позиціювання якоря та блок-контейнер, змінений властивістю \`inset\`](https://www.bram.us/2025/12/02/anchor-positioning-and-the-inset-modified-containing-block-imcb/)  
-- [Masonry: речі, для яких вам більше не знадобиться бібліотека](https://www.smashingmagazine.com/2025/12/masonry-things-you-wont-need-library-anymore/)  
+- 📚 [Запасний варіант для view transitions: DOMContentLoaded + requestAnimationFrame()](https://piccalil.li/blog/a-view-transitions-fallback-domcontentloaded-requestanimationframe/)  
+- ✅ [Недоліки scrollbar-gutter: stable; (і один дивний трюк)](https://frontendmasters.com/blog/the-downsides-of-scrollbar-gutter-stable-and-one-weird-trick/)  
+- 📚 [Розширення для розмиття неквадратних зображень](https://frontendmasters.com/blog/non-square-image-blur-extensions/)  
+- 📚 [Позиціювання якоря та блок-контейнер, змінений властивістю \`inset\`](https://www.bram.us/2025/12/02/anchor-positioning-and-the-inset-modified-containing-block-imcb/)  
+- ✅ [Masonry: речі, для яких вам більше не знадобиться бібліотека](https://www.smashingmagazine.com/2025/12/masonry-things-you-wont-need-library-anymore/)  
 - [Галерея нахилених зображень з ефектом наведення](https://css-tip.com/skewed-images/)  
 - [Скролітелінг на стероїдах з Scroll-State Queries](https://css-tricks.com/scrollytelling-on-steroids-with-scroll-state-queries/)  
 - [Запобігання прокручуванню сторінки під час відкриття діалогового вікна](https://css-tricks.com/prevent-a-page-from-scrolling-while-a-dialog-is-open/)  
