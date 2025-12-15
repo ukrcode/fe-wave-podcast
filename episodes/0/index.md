@@ -1,88 +1,81 @@
-# #0: Пілотний епізод: Antrhropic придбали Bun, вебпродуктивність у 2025 році і AdventJS до Різдва
+# #0: Пілотний епізод: WIP
 
 🎙️ Мене звати Станіслав і я фронтенд розробник з Києва. Ідея цього подкасту виникла після того, як я не знайшов нічого подібного українською мовою. Тут кожного тижня я буду розповідати про найважливіші новини фронтенду і веб-розробки.
 
-💅 Цей випуск зроблено на основі [Front-end Digest № 129: Clickjacking 2.0, Bun з Anthropic та прогрес TypeScript 7](https://dou.ua/forums/topic/56904/) від [Olexander Smolianinov](https://dou.ua/users/dersmoll/), frontend director в [ZFORT Group](https://jobs.dou.ua/companies/zfort/). Обовʼязково підпишіться на його дайджест, там дуже багато корисної інформації.
+💅 Цей випуск зроблено на основі [Front-end Digest № 130: CSS Wrapped 2025, чергова вразливість React та Нативний компілятор TypeScript 7](https://dou.ua/forums/topic/57004/) від [Olexander Smolianinov](https://dou.ua/users/dersmoll/), frontend director в [ZFORT Group](https://jobs.dou.ua/companies/zfort/). Обовʼязково підпишіться на його дайджест, там дуже багато корисної інформації.
 
 📝 Нижче наведено оригінальний текст дайджесту з невеличким змінами.
 
 Новини, які увійшли в випуск помічені ✅, решта — рекомендоване читання - 📚. Я зробив таке розділення, бо їх забагато для формату і таймінгу, в який хочу вкластися.
 
-# Front-end Digest № 129: Clickjacking 2.0, Bun з Anthropic та прогрес TypeScript 7
+# Front-end Digest № 130: CSS Wrapped 2025, чергова вразливість React та Нативний компілятор TypeScript 7
 
 ### **Веброзробка**
 
-- 📚 [Новий вид клікджекінг-атаки, що базується на CSS і SVG](https://www.theregister.com/2025/12/05/css%5Fsvg%5Fclickjacking/)  
-- ✅ [SVG Filters — Clickjacking 2.0](https://lyra.horse/blog/2025/12/svg-clickjacking/)  
-- 📚 [Проблеми верхнього шару: спливаюче вікно чи діалогове?](https://htmhell.dev/adventcalendar/2025/1/)  
-- 📚 [Два портфоліо, один процес: де поєднуються дизайн, рух і код](https://tympanus.net/codrops/2025/12/02/two-portfolios-one-process-where-design-motion-and-code-come-together/)
+- ✅ [Найкращі практики безпеки NPM: як захистити свої пакети після атаки Shai Hulud Attack у 2025 році](https://snyk.io/articles/npm-security-best-practices-shai-hulud-attack/)
+- 📚 [Пояснення проблеми React2Shell від CEO з Vercel](https://x.com/rauchg/status/1997362942929440937)
+- 📚 [Перехід Remix Store у відкритий доступ](https://remix.run/blog/oss-remix-store)
+- ✅ [Як HTML змінюється в ePub](https://htmhell.dev/adventcalendar/2025/11/)
+- 📚 [Створіть гру про бігуна-динозавра за допомогою Deno, ч.1](https://deno.com/blog/build-a-game-with-deno-1)
+- 📚 [Механіка кругової 3D-каруселі, керованої прокручуванням, з Three.js та постобробкою](https://tympanus.net/codrops/2025/12/14/the-mechanics-behind-a-scroll-driven-circular-3d-carousel-with-three-js-and-post-processing/)
 
-- **Інструменти**  
-  - ✅ [Bun приєднується до Anthropic](https://bun.com/blog/bun-joins-anthropic)  
-  - ✅ [Новинки в ViteLand: підсумки листопада 2025 року](https://voidzero.dev/posts/whats-new-nov-2025)  
-  - 📚 [Vite 8 Beta: The Rolldown-powered Vite ​](https://vite.dev/blog/announcing-vite8-beta)  
-  - 📚 [Oxfmt: Oxc Formatter Alpha](https://oxc.rs/blog/2025-12-01-oxfmt-alpha.html)  
-  - 📚 [Bun 1.3: чи настав час розробникам переосмислити стек Node](https://blog.logrocket.com/bun-javascript-runtime-taking-node-js-deno/)
-- **Продуктивність**  
-  - ✅ [Огляд 2025 року: що нового у вебпродуктивності](https://www.debugbear.com/blog/2025-in-web-performance)  
-  - ✅ [Вебпродуктивність 2025 року: перехід від оптимізації до прогнозування](https://calendar.perfplanet.com/2025/web-performance-2025-the-shift-from-optimization-to-prediction/)  
-  - ✅ [Шаблон розробки «Fast by Default»](https://fastbydefault.com/)  
-  - ✅ [NoLoJS: зменшення навантаження JS за допомогою HTML та CSS](https://calendar.perfplanet.com/2025/nolojs-reducing-js-workload-html-css/)
+- **Швидкодія**
+  - 📚 [Прискорення роботи складних вебзастосунків. Пропозиція Delayed Message Timing API від розробників з Microsoft](https://blogs.windows.com/msedgedev/2025/12/09/making-complex-web-apps-faster/)
+  - ✅ [Як швидко браузери можуть обробляти дані в base64?](https://lemire.me/blog/2025/11/29/how-fast-can-browsers-process-base64-data/)
+  - ✅ [Як завантажити CSS (швидко)](https://calendar.perfplanet.com/2025/how-to-load-css-fast/)
+- **Інструменти**
+  - 📚 [Функції WebKit для Safari 26.2](https://webkit.org/blog/17640/webkit-features-for-safari-26-2/)
+  - ✅ [Deno 2.6: dx — це новий npx](https://deno.com/blog/v2.6)
+  - ✅ [Корисні шаблони для створення HTML-інструментів](https://simonwillison.net/2025/Dec/10/html-tools/)
 
 ### **CSS**
 
-- 📚 [Загадка глибини стека карток](https://frontendmasters.com/blog/the-deep-card-conundrum/)  
-- 📚 [Запасний варіант для view transitions: DOMContentLoaded + requestAnimationFrame()](https://piccalil.li/blog/a-view-transitions-fallback-domcontentloaded-requestanimationframe/)  
-- ✅ [Недоліки scrollbar-gutter: stable; (і один дивний трюк)](https://frontendmasters.com/blog/the-downsides-of-scrollbar-gutter-stable-and-one-weird-trick/)  
-- 📚 [Розширення для розмиття неквадратних зображень](https://frontendmasters.com/blog/non-square-image-blur-extensions/)  
-- 📚 [Позиціювання якоря та блок-контейнер, змінений властивістю \`inset\`](https://www.bram.us/2025/12/02/anchor-positioning-and-the-inset-modified-containing-block-imcb/)  
-- ✅ [Masonry: речі, для яких вам більше не знадобиться бібліотека](https://www.smashingmagazine.com/2025/12/masonry-things-you-wont-need-library-anymore/)  
-- ✅ [Галерея нахилених зображень з ефектом наведення](https://css-tip.com/skewed-images/)  
-- ✅ [Скролітелінг на стероїдах з Scroll-State Queries](https://css-tricks.com/scrollytelling-on-steroids-with-scroll-state-queries/)  
-- ✅ [Запобігання прокручуванню сторінки під час відкриття діалогового вікна](https://css-tricks.com/prevent-a-page-from-scrolling-while-a-dialog-is-open/)  
-- ✅ [Практичний посібник із сучасних кольорів CSS — частина друга](https://piccalil.li/blog/a-pragmatic-guide-to-modern-css-colours-part-two/)
+- ✅ [CSS Wrapped 2025: щорічні підсумки від Google](https://chrome.dev/css-wrapped-2025/)
+- 📚 [CSS Wrapped 2025: Google показав головні тренди року. Що там цікавого?](https://dou.ua/forums/topic/56938/)
+- 📚 [Стан, логіка та вбудована міць: CSS Wrapped 2025](https://www.smashingmagazine.com/2025/12/state-logic-native-power-css-wrapped-2025/)
+- ✅ [Думки про нативні CSS-міксини](https://frontendmasters.com/blog/thoughts-on-native-css-mixins/)
+- 📚 [Чому мої view transitions миготять?](https://piccalil.li/blog/why-are-my-view-transitions-blinking/)
+- 📚 [CSS-анімації, що запускаються прокручуванням, наближаються!](https://developer.chrome.com/blog/scroll-triggered-animations?hl=en)
+- ✅ [Що ще можуть робити Container Queries... Query?](https://css-tricks.com/what-else-could-container-queries-query/)
+- 📚 [Створення анімацій на основі прокрутки в Full view()](https://css-tricks.com/creating-scroll-based-animations-in-full-view/)
+- ✅ [Призупинення CSS-анімації за допомогою getAnimations()](https://cassidoo.co/post/pause-css-animation/)
+- 📚 [Як створити ефекти рідкого скла за допомогою CSS і SVG](https://blog.logrocket.com/how-create-liquid-glass-effects-css-and-svg/)
 
 ### **JavaScript**
 
-- ✅ [AdventJS — різдвяний кодувальний челендж: 24 вправи до Різдва](https://adventjs.dev/)  
-- ✅ [Припиніть використовувати JavaScript для вирішення проблем CSS](https://blog.logrocket.com/stop-using-js-for-css/)  
-- ✅ [Нюанси типізації JavaScript за допомогою JSDoc](https://thathtml.blog/2025/12/nuances-of-typing-with-jsdoc/)  
-- 📚 [Javascript-синтезатор дронового ембієнтного шуму: коли нестабільність стає перевагою, а не дефектом](https://bs.stranno.su/drone-ambient-noise-synthesizer/)  
-- ✅ [Адвент-календар Svelte 2025](https://advent.sveltesociety.dev/2025)  
-- 📚 [Angular pipes: час переосмислити](https://medium.com/coreteq/angular-pipes-time-to-rethink-f616ec84fb8d)
+- ✅ [ES2026 вирішує головний біль JavaScript з датами, математикою та модулями](https://thenewstack.io/es2026-solves-javascript-headaches-with-dates-math-and-modules/)
 
-- **TypeScript**  
-  - ✅ [Прогрес TypeScript 7 — грудень 2025](https://devblogs.microsoft.com/typescript/progress-on-typescript-7-december-2025/)  
-  - 📚 [Немонотонність суворості TypeScript: взаємодія strict-null-checks і no-implicit-any](https://huonw.github.io/blog/2025/12/typescript-monotonic/)  
-  - 📚 [Як проводити юніт-тестування Vue composable з TypeScript](https://johnfraney.ca/blog/how-to-unit-test-a-vue-composable-with-typescript/)  
-  - 📚 [Теорія категорій для розробників JavaScript/TypeScript](https://ibrahimcesar.cloud/blog/category-theory-for-javascript-typescript-developers/)
-- **React**  
-  - ✅ [Критична вразливість безпеки в React Server Components](https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components)  
-  - ✅ [React змінився, ваші хуки теж мають змінитися](https://allthingssmitty.com/2025/12/01/react-has-changed-your-hooks-should-too/)  
-  - ✅ [Припиніть звинувачувати React у своїх проблемах з управлінням станом](https://thenewstack.io/stop-blaming-react-for-your-state-management-hangover/)  
-  - 📚 [Настала нова ера React: ось що вам потрібно знати](https://blog.logrocket.com/the-next-era-of-react/)  
-  - ✅ [Критичні помилки RSC в React і Next.js дозволяють виконувати віддалений код без аутентифікації](https://thehackernews.com/2025/12/critical-rsc-bugs-in-react-and-nextjs.html)
+- **TypeScript**
+  - 📚 [Айсберг брендованих типів у TypeScript: від основ до глибин](https://dou.ua/forums/topic/56910/)
+  - 📚 [Prelude of the Chambered Reborn: переписання класики на TypeScript](https://angelo-lima.fr/en/prelude-of-the-chambered-reborn-typescript-web-port/)
+  - ✅ [Нативний компілятор TypeScript 7: наслідки для фронтенд-розробки](https://www.iocombats.com/blogs/typescript-7-native-compiler-impact-frontend-engineering)
+- **React**
+  - 📚 [Знайомство зі швидкодією React Server Components](https://calendar.perfplanet.com/2025/intro-to-performance-of-react-server-components/)
+  - ✅ [DoS та розкриття вихідного коду в React Server Components](https://react.dev/blog/2025/12/11/denial-of-service-and-source-code-exposure-in-react-server-components)
+  - ✅ [React 19.2\. Подальші вдосконалення INP-оптимізації](https://calendar.perfplanet.com/2025/react-19-2-further-advances-inp-optimization/)
+  - ✅ [Контрольовані та неконтрольовані компоненти в React](https://certificates.dev/blog/controlled-vs-uncontrolled-components-in-react)
+- **Angular**
+  - ✅ [Angular 21 — Signal з формами — чому іноді краще почекати](https://techhub.iodigital.com/articles/angular21-signals-with-forms)
+  - ✅ [Signal Forms в Angular 21 — повний посібник](https://www.angular.love/signal-forms-in-angular-21-complete-guide)
 
 ### **Фронтенд-меми**
 
-![](https://s.dou.ua/storage-files/image_24381969131765196562316_opt.jpg)
+![](https://s.dou.ua/storage-files/image_894203704121765803411301_opt.jpg)
 
-![](https://s.dou.ua/storage-files/image_927266636141765196562317.png)
+![](https://s.dou.ua/storage-files/image_656098891131765803411302.png)
 
-![](https://s.dou.ua/storage-files/image_162368158231765196562409_opt.jpg)
+![](https://s.dou.ua/storage-files/image_628158794141765803411304_opt.jpg)
 
-![](https://s.dou.ua/storage-files/image_294536545151765196562321_opt.jpg)
+![](https://s.dou.ua/storage-files/image_767500610151765803411304.png)
 
-![](https://s.dou.ua/storage-files/image_535018465161765196562323.png)
+![](https://s.dou.ua/storage-files/image_1496123161765803411305.png)
 
-![](https://s.dou.ua/storage-files/image_432971915171765196562324_opt.jpg)
+![](https://s.dou.ua/storage-files/image_171580426171765803411306.png)
 
-![](https://s.dou.ua/storage-files/image_67013140181765196562326_opt.jpg)
+![](https://s.dou.ua/storage-files/image_99238061181765803411307.png)
 
-![](https://s.dou.ua/storage-files/image_718395683191765196562326_opt.jpg)
+![](https://s.dou.ua/storage-files/image_770149227191765803411307.png)
 
-![](https://s.dou.ua/storage-files/image_333892339201765196562327.png)
+![](https://s.dou.ua/storage-files/image_720961379201765803411308.png)
 
-![](https://s.dou.ua/storage-files/image_343979922211765196562329_opt.jpg)
-
-![](https://s.dou.ua/storage-files/image_655227383221765196562332_opt.jpg)
+![](https://s.dou.ua/storage-files/image_920813511211765803411309_opt.jpg)
