@@ -52,8 +52,8 @@
 - **React**
   - 📚 [Знайомство зі швидкодією React Server Components](https://calendar.perfplanet.com/2025/intro-to-performance-of-react-server-components/)
   - ✅ [DoS та розкриття вихідного коду в React Server Components](https://react.dev/blog/2025/12/11/denial-of-service-and-source-code-exposure-in-react-server-components)
-  - ✅ [React 19.2\. Подальші вдосконалення INP-оптимізації](https://calendar.perfplanet.com/2025/react-19-2-further-advances-inp-optimization/)
-  - ✅ [Контрольовані та неконтрольовані компоненти в React](https://certificates.dev/blog/controlled-vs-uncontrolled-components-in-react)
+  - 📚 ✅ [React 19.2\. Подальші вдосконалення INP-оптимізації](https://calendar.perfplanet.com/2025/react-19-2-further-advances-inp-optimization/)
+  - 📚 ✅ [Контрольовані та неконтрольовані компоненти в React](https://certificates.dev/blog/controlled-vs-uncontrolled-components-in-react)
 - **Angular**
   - ✅ [Angular 21 — Signal з формами — чому іноді краще почекати](https://techhub.iodigital.com/articles/angular21-signals-with-forms)
   - ✅ [Signal Forms в Angular 21 — повний посібник](https://www.angular.love/signal-forms-in-angular-21-complete-guide)

@@ -2,6 +2,20 @@
 
 ## Веброзробка
 
+### ✅ Найкращі практики безпеки NPM: як захистити свої пакети після атаки Shai Hulud Attack у 2025 році
+
+**Джерело:** [NPM Security Best Practices: Shai Hulud Attack](https://snyk.io/articles/npm-security-best-practices-shai-hulud-attack/)
+
+**Основна ідея:** Атака Shai Hulud у 2025 році продемонструвала нові вразливості в екосистемі NPM, підкресливши важливість сучасних практик безпеки для захисту пакетів та проєктів.
+
+Атака Shai Hulud стала одним з найбільш значущих security інцидентів в екосистемі NPM, демонструючи, як зловмисники можуть компрометувати supply chain через вразливості в популярних пакетах. Назва атаки відсилає до гігантських піщаних хробаків з "Дюни" Френка Герберта, що символізує масштаб та глибину проникнення загрози в екосистему JavaScript.
+
+Ключові практики безпеки після цього інциденту включають: регулярний аудит залежностей з використанням інструментів як `npm audit`, `snyk test` та automated security scanning у CI/CD pipeline; впровадження принципу найменших привілеїв для NPM токенів та доступів до репозиторіїв; використання lockfiles (`package-lock.json`, `yarn.lock`) для гарантування консистентності залежностей між environment; enable 2FA (two-factor authentication) для всіх NPM облікових записів з правами публікації пакетів.
+
+Важливо впроваджувати перевірку integrity через subresource integrity (SRI) hashes, monitoring підозрілої активності в dependency tree, та regularly updating залежностей для отримання security patches. Організації повинні розглянути використання private NPM registries або artifact repositories для критичних внутрішніх пакетів, щоб зменшити exposure до публічних загроз. Code review процеси мають включати перевірку змін у lockfiles та аналіз нових залежностей перед їх додаванням до проєкту.
+
+Supply chain attacks, як Shai Hulud, підкреслюють необхідність defense-in-depth стратегії: не покладатися лише на один рівень захисту, а створювати множинні бар'єри між потенційними загрозами та критичною інфраструктурою. Це включає automated scanning, manual review для критичних змін, sandboxing для testing нових пакетів, та incident response plan на випадок виявлення компрометованих залежностей.
+
 ### ✅ Як HTML змінюється в ePub
 
 **Джерело:** [How HTML changes in ePub](https://htmhell.dev/adventcalendar/2025/11/)
@@ -154,3 +168,119 @@ Animation об'єкти також надають інші корисні вла
 **Temporal** - довгоочікувана заміна "зламаного Date об'єкта JavaScript" досягла Stage 3 draft з першими імплементаціями. Date не старіє добре - розробники або використовують його неправильно з багами, або уникають повністю через бібліотеки як Moment.js. "Якщо взяти будь-який web app і проаналізувати bundle, найбільший квадрат зазвичай Moment.js або щось подібне" - Jason Williams. Temporal краще спроектований: обробляє time zones, включає вбудований календар, парсить та форматує дати правильно. Temporal має 4,000 тестів (більше ніж весь ES6). Rust crate temporal_rs містить більшість логіки, яку можуть використовувати інші JavaScript engine. V8 вже unflagged для Chromium 144 (stable 7 січня 2026), Safari implementation майже наполовину закінчена, два production polyfills доступні.
 
 **Import defer** відкладає evaluation модуля до першого використання namespace, дозволяючи оплачувати лише те, що використовується: `import defer * as utils from './utils.js'`. "Це дуже корисно у великих code bases з deep module graphs, що можуть займати сотні мілісекунд завантаження" - Rob Palmer. Bloomberg terminal вже використовує цей паттерн. Все ще синхронне (на відміну від dynamic import), тому легше вставити як оптимізацію. Підтримка у TypeScript, Prettier, Babel, webpack. Імплементації у V8 та WebKit JavaScriptCore engine у розробці. **Upsert** для maps та weak maps дозволяє перевірити значення 'it exists' або 'insert if it doesn't' без написання conditional test - звична операція у базах даних. Буде у Chrome 145 у січні 2026, студенти з University of Bergen працюють над кодом.
+
+### ✅ Нативний компілятор TypeScript 7: наслідки для фронтенд-розробки
+
+**Джерело:** [TypeScript 7's Native Compiler: What It Really Means for Frontend Engineering](https://www.iocombats.com/blogs/typescript-7-native-compiler-impact-frontend-engineering)
+
+**Основна ідея:** TypeScript 7 переходить на нативний компілятор, що обіцяє радикальні покращення швидкості збірки, але також видаляє підтримку legacy форматів модулів та робить strict mode стандартом за замовчуванням.
+
+TypeScript завжди був досить швидким, але обмеженим тим, що написаний на JavaScript. З TS7 компілятор перебудовується з нативною архітектурою, яка може використовувати низькорівневі оптимізації, недоступні для JS. Результат: драматично швидші повні збірки, значно швидший incremental + watch mode, мінімальне використання пам'яті, чистіший output для ES6+. Це не "2-3% покращення" - команди, які тестували ранні збірки, повідомляють про двозначні покращення в cold builds та масивні стрибки у responsiveness watch mode.
+
+Одна з найважливіших змін - видалення legacy форматів модулів. TypeScript 7 припиняє підтримку AMD, UMD та SystemJS. Натомість TS7 очікує, що екосистема стандартизується навколо ES Modules (primary target) та CommonJS (мінімальна підтримка для Node interop). Якщо у вас старі Rollup конфігурації, RequireJS ланцюги, legacy мікрофронтенди або enterprise додатки на SystemJS - TS7 змусить переписати. Це буде шумно для команд, які не модернізували свої bundling стратегії.
+
+Strict mode тепер увімкнений за замовчуванням, і екосистема має розглядати strictness як baseline, а не advanced опцію. Якщо ваш репозиторій має casual `any` usage, weak null checking, type fallthrough across modules, або inconsistent type definitions - TS7 це виявить. Це може здаватися болючим, але насправді це узгоджується з напрямком frontend engineering: безпечніші, більш передбачувані та оптимізовані codebase. Повідомлення від TS команди чітке: якщо ваші типи не strict, вони не допомагають.
+
+TypeScript's internal resolver завжди мав проблеми з path aliasing. У TS7 команда спрощує dependency resolution, зменшуючи залежність від `baseUrl` та більше узгоджуючись з Node та bundler resolution patterns. Команди з глибокими aliasing структурами як `import Button from '@/components/ui/button'` можуть потребувати налаштувань конфігурації. Це також штовхає екосистему до більш передбачуваних module graphs, менше "magic paths", чистішого bundler alignment.
+
+Реальні бенчмарки від senior engineers показують: 20-50% швидші cold builds у середніх React/Next репозиторіях, 30-70% швидший watch mode responsiveness для великих monorepo, нижчі CPU спайки на incremental rebuilds, зменшений memory footprint під час великих компіляцій. Mozilla повідомила про майбутні зміни у Firefox, які значно прискорять роботу.
+
+Цей зсув не відбувається ізольовано. Інструменти, що залежать від TS internals, потребуватимуть часу для адаптації: eslint-typescript, ts-node, Angular compiler pipelines, Storybook TypeScript loaders, Vite + SWC TypeScript transforms, Jest transformers. Не все зламається, але багато інтеграцій зазнають впливу. Рекомендована стратегія міграції: почніть з некритичних пакетів, виправте strictness проблеми рано, перепишіть legacy формати модулів, аудит path aliases, валідуйте всі залежні інструменти, тримайте TS6 доступним під час rollout.
+
+### ✅ DoS та розкриття вихідного коду в React Server Components
+
+**Джерело:** [Denial of Service and Source Code Exposure in React Server Components](https://react.dev/blog/2025/12/11/denial-of-service-and-source-code-exposure-in-react-server-components)
+
+**Основна ідея:** Після критичної вразливості React2Shell дослідники виявили дві додаткові вразливості у React Server Components - DoS атаку високої складності та витік вихідного коду середньої складності.
+
+Security дослідники знайшли та розкрили дві додаткові вразливості у React Server Components під час спроби експлуатувати патчі з минулотижневої критичної вразливості. Ці нові вразливості не дозволяють Remote Code Execution - патч для React2Shell залишається ефективним. Нові вразливості: Denial of Service - High Severity (CVE-2025-55184 та CVE-2025-67779 з CVSS 7.5) та Source Code Exposure - Medium Severity (CVE-2025-55183 з CVSS 5.3).
+
+Це звичайна ситуація для критичних CVE - коли критична вразливість розкривається, дослідники ретельно вивчають суміжні code paths, шукаючи варіанти exploit технік для перевірки, чи можна обійти початкову міграцію. Цей паттерн з'являється по всій індустрії. Наприклад, після Log4Shell були повідомлені додаткові CVE, коли спільнота досліджувала оригінальний fix. Додаткові розкриття можуть бути фруструючими, але вони загалом є ознакою здорового response cycle.
+
+**Denial of Service (High Severity)**: Дослідники виявили, що зловмисний HTTP запит може бути створений та відправлений на будь-який Server Functions endpoint, який при deserialize React може спричинити infinite loop, що зависає server process та споживає CPU. Навіть якщо ваш додаток не має React Server Function endpoints, він все одно може бути вразливим, якщо підтримує React Server Components. Це створює vulnerability vector, де атакуючий може заборонити користувачам доступ до продукту та потенційно мати performance вплив на server environment. Патчі, опубліковані сьогодні, пом'якшують, запобігаючи infinite loop. Оригінальний fix був incomplete, залишивши версії 19.0.2, 19.1.3, 19.2.2 вразливими. Версії 19.0.3, 19.1.4, 19.2.3 безпечні.
+
+**Source Code Exposure (Medium Severity)**: Security дослідник виявив, що зловмисний HTTP запит, відправлений на вразливу Server Function, може небезпечно повернути вихідний код будь-якої Server Function. Exploitation вимагає існування Server Function, яка явно або неявно expose stringified argument. Наприклад, функція з `const conn = db.createConnection('SECRET KEY')` може витікати і цей секретний ключ у відповіді, якщо `name` параметр stringified. Важливо: лише secrets hardcoded у source code можуть бути exposed - runtime secrets як `process.env.SECRET` не постраждали. Scope exposed коду обмежений кодом всередині Server Function, що може включати інші функції залежно від кількості inlining вашого bundler.
+
+Вразливості присутні у тих самих пакетах та версіях, що й CVE-2025-55182: versions 19.0.0-19.2.2 пакетів react-server-dom-webpack, react-server-dom-parcel, react-server-dom-turbopack. Fixes backported до версій 19.0.3, 19.1.4, та 19.2.3. Постраждали frameworks та bundlers: next, react-router, waku, @parcel/rsc, @vite/rsc-plugin, rwsdk. Timeline: 3 грудня - leak reported до Vercel та Meta Bug Bounty, 4 грудня - initial DoS reported, 11 грудня - патчі опубліковані та publicly disclosed, додатковий DoS case знайдений internally.
+
+### ✅ React 19.2 - Подальші вдосконалення INP-оптимізації
+
+**Джерело:** [React 19.2. Further Advances INP Optimization](https://calendar.perfplanet.com/2025/react-19-2-further-advances-inp-optimization/)
+
+**Основна ідея:** React 19.2 представляє новий компонент `<Activity />` та Performance Tracks у Chrome DevTools, надаючи розробникам кращі інструменти для розуміння та контролю того, як додаток перевантажує main thread браузера.
+
+React не автоматично швидкий - довгі JavaScript tasks можуть виникати з цілком звичайних конструкцій. Більший DOM та більше компонентів означають більше роботи під час hydration та повільніший UI під час взаємодії. На практиці навіть відносно прості дії користувача можуть займати сотні мілісекунд, змушуючи метрику INP злітати. Release React 19.2 приніс нові можливості, які дають розробникам нові інструменти для розуміння, що відбувається всередині React.
+
+**Новий компонент `<Activity />`** відповідає на проблему, яку розробники вирішували довгий час: як ефективно ховати частини UI без втрати їх стану, не обтяжуючи браузер повним React render щоразу, коли компонент прихований. Використовуючи параметр `mode`, він переключає, чи компонент visible чи hidden. Коли компонент переходить у `mode="hidden"`, React не unmount його з DOM - він візуально ховає його через `display:none`. Це надає дві величезні переваги: збереження Local State (всі `useState`, `useReducer` та context залишаються в пам'яті) та збереження DOM State (стан елементів як текст у `<input>` полях, scroll position, вибраний tab).
+
+Навіть якщо компонент залишається mounted, React концептуально розглядає його як unmounted та видаляє всі `useEffect` hooks. Це гарантує, що приховані частини UI не отримують дані, не запускають таймери тощо, радикально зменшуючи навантаження на систему та пам'ять. Компоненти всередині Activity можуть все ще re-render, якщо дані від їх parent змінюються (props), але React виконує ці оновлення з найнижчим пріоритетом. Оновлення прихованого контенту відбуваються лише коли немає критичної роботи (як user interaction) на видимій частині сторінки.
+
+Контент, загорнутий у `<Activity>`, готується для користувача під час hydration, захищаючи від UI freezing. Це значно прискорює навігацію, tab switching та інші UI displays, оскільки React не повинен рендерити весь контент вперше лише коли користувач вперше активує його. Подібно до `<Suspense>`, `<Activity>` ділить component tree на незалежні юніти, дозволяючи React селективно hydrate частини застосунку. Попередній рендеринг відбувається з нижчим пріоритетом - React розбиває роботу на індивідуальні шматки. Важлива примітка щодо SSR: React не вставляє приховані Activity компоненти у HTML взагалі під час server-side rendering. Будьте обережні, оскільки це може мати негативні наслідки для SEO.
+
+**Performance Tracks у Chrome DevTools** - друга велика нова можливість. До цього треба було використовувати два інструменти одночасно для performance debugging: React Devtools та Performance Timeline. Тепер все видно разом на одній timeline: React events, metrics, network requests, running JavaScript, event loop activity - все поділено на чіткі окремі sub-panels (tracks). **Scheduler Track** показує, над чим React зараз працює, які його пріоритети, як він ділить rendering cycle phases (Update, Render, Commit, Remaining Effects) та скільки вони займають. Особлива увага до Cascading updates - якщо компонент тригерить update чогось іншого під час render, React повинен відкинути частину роботи та почати знову.
+
+**Components Track** візуалізує індивідуальні компоненти, тривалості rendering та effects у формі flamegraph. Це як X-ray, що виявляє, які компоненти мають який вплив на performance. Кожна "смужка" у track відповідає одному конкретному компоненту: коли він рендериться, як довго паузує, наскільки глибоке sub-tree створює, та чи містить effects, які тривають підозріло довго. **Server Track** - якщо використовуєте React Server Components, треба спробувати новий profiling метод. Додаткова Server Track панель показує виклики та операції, що відбуваються під час SSR у Node.js. Це essential, оскільки у hybrid застосунках сьогодні частина логіки працює на клієнті, а частина на сервері.
+
+### ✅ Контрольовані та неконтрольовані компоненти в React
+
+**Джерело:** [Controlled vs Uncontrolled Components in React](https://certificates.dev/blog/controlled-vs-uncontrolled-components-in-react)
+
+**Основна ідея:** Терміни "controlled" та "uncontrolled" у React завжди задають одне питання: хто володіє станом - батьківський компонент через props чи компонент управляє ним внутрішньо?
+
+Обидва використання "controlled" та "uncontrolled" діляться однією базовою концепцією: Controlled означає, що стан належить зовні та передається через props; Uncontrolled означає, що стан належить внутрішньо самому компоненту. Для form inputs "internal state" означає, що DOM управляє значенням. Для custom компонентів "internal state" зазвичай означає React's `useState`. Але це те саме питання: чи батьківський компонент контролює стан, чи компонент управляє ним внутрішньо?
+
+Controlled input має своє значення, керовану батьківським компонентом через React state: `<input value={query} onChange={(e) => setQuery(e.target.value)} />`. React повністю контролює значення цього input. Властивість `value` встановлює, що відображається, а `onChange` оновлює стан. Все, що оновлює `query` - чи то typing, "Clear" кнопка, або вибір suggestion - оновить input. Важливо: `value` та `onChange` повинні працювати разом. Якщо передати `value` без `onChange`, буде неможливо вводити в input - React відкине кожне натискання клавіші назад до вказаного значення.
+
+Uncontrolled input управляє своїм значенням внутрішньо через DOM: `<input name="query" defaultValue="" />`. React не знає про значення цього input - він не встановлює чи оновлює його, та не знає коли воно змінюється. Властивість `defaultValue` встановлює лише початкове значення; після цього DOM володіє станом. Дані читаються на submit через `FormData`.
+
+Цей же патерн застосовується до custom компонентів. Простий `Toggle` компонент з `useState` є uncontrolled, оскільки батьківський компонент не має способу читати чи встановлювати toggle значення. Щоб зробити `Toggle` controlled, переміщуємо стан до батьківського компонента та передаємо через props: `<Toggle isOn={darkMode} onToggle={() => setDarkMode(!darkMode)} />`. Тепер батьківський компонент контролює значення toggle - він може читати стан для оновлення теми, скидати його, або координувати множинні toggles.
+
+Деякі компоненти підтримують обидва режими, як нативні `<input>` елементи. Для `Toggle` це може виглядати так: перевірка `isOn !== undefined` визначає режим. Коли controlled, компонент використовує prop та делегує зміни батьківському через `onToggle`. Коли uncontrolled, він управляє власним станом внутрішньо через `defaultOn`. Важливе правило: компонент не повинен переключатися між controlled та uncontrolled режимами під час свого життя.
+
+Real-world приклади: Tabs (uncontrolled управляє активною вкладкою внутрішньо, controlled приймає `activeTab` та `onTabChange` props), Modals (uncontrolled має internal `isOpen` стан, controlled приймає `isOpen` та `onClose` props), Accordions (uncontrolled дозволяє кожній панелі управляти власним open/closed станом, controlled приймає `expandedPanels` для "single panel open" поведінки), Date Pickers (uncontrolled управляє вибором внутрішньо, controlled дозволяє батьківському валідувати дати та sync з іншими полями).
+
+Trade-offs: для форм uncontrolled inputs часто простіші - DOM обробляє стан, значення читаються на submit через `FormData`. Controlled inputs стають цінними, коли потрібне значення під час typing - для real-time validation, transforming input (форматування телефонних номерів), або координації множинних полів. Для custom компонентів питання в тому, чи компонент повинен працювати незалежно чи координуватися батьківським. Uncontrolled простіший коли стан є implementation detail. Controlled дозволяє координацію та складну поведінку.
+
+### ✅ Angular 21 — Signal з формами — чому іноді краще почекати
+
+**Джерело:** [Angular 21 — Signal with Forms — Why Sometimes Waiting Is The Better Choice](https://techhub.iodigital.com/articles/angular21-signals-with-forms)
+
+**Основна ідея:** Angular 21 представляє експериментальні Signal Forms, але для багатьох команд очікування дозрівання API може бути кращою стратегією, ніж негайна міграція.
+
+У світі швидкої розробки команди часто відчувають постійний тиск підтримувати codebase сучасним. Технології еволюціонують швидко, та розробників заохочують - іноді очікується - оновлювати frameworks та архітектури якомога швидше. Але за цими очікуваннями іноді не поспішати, а чекати є кращим вибором. Angular проходить суттєву трансформацію (з версії 16), що змушує багато команд розглядати поступове refactoring або переписування частин застосунків.
+
+Angular почав зміщувати свій change detection механізм, відходячи від підходу, що сильно покладався на zone.js. Раніше zone.js автоматично відстежував зміни і з `OnPush` стратегією селективно перевіряв компоненти лише коли необхідно. З новим підходом Angular переймає signal-based систему - компоненти оновлюються лише коли signal явно вказує, що потрібне оновлення. Ця зміна спроектована для покращення performance та зменшення unnecessary re-renders, але також має implications для існуючих бібліотек та patterns.
+
+До Signal розробники покладалися на Reactive Forms - систему, побудовану навколо класів як `FormGroup`, `FormControl`, `FormArray`, та `Validators`. Reactive Forms надавали структурований та передбачуваний спосіб управління станом форм, застосування validation rules, та реагування на user input. Ключовий interaction pattern був subscribing до `valueChanges` або `statusChanges` observables для реагування на form updates. Ці події покладалися на Angular's change-detection механізм, тому Reactive Forms були тісно зв'язані з zone.js.
+
+Поточна проблема з Signal forms в тому, що їм бракує повністю зрілого API для організації складних форм у grouped структуру з усіма можливостями, які очікуються (nested grouping, dynamic validation, complex logic). Хоча існує "cheat" workaround - повторне використання старого `FormGroup` (з Reactive Forms) всередині signal-based setup - це покладається на legacy zone.js + observable & subscription модель, що підриває багато переваг, які прагнуть надати Signals. В результаті використання Signals з `FormGroup` цим hybrid способом часто надає мало або зовсім не дає реальної користі, тому загалом не рекомендується їх комбінувати таким чином.
+
+Angular розпізнав саме цю проблему та працював над рішенням. 19 листопада 2025 був released Angular 21. Одним з найважливіших доповнень є експериментальний release Signal Forms, які адресують missing feature та сподіваємось будуть successor Reactive Forms. Валідація може бути виконана з новоствореним `schemaPath`, який містить класичну `minLength`, `maxLength`, `required` validation. Signal Forms API позначений як експериментальний, що означає API може еволюціонувати з майбутніми releases - тому він ще не рекомендований для production usage без обережності.
+
+Завдяки сильній відданості Angular зворотній сумісності багато команд вибирають upgrade застосунків до новішої версії, продовжуючи покладатися на Reactive Forms на поточний момент - іншими словами: чекають. Важливо підкреслити, що напрямок Angular до Signal-based моделі дуже обіцяючий. Фундамент, що будується навколо Signal, солідний, і коли form-related APIs дозріють, Signals ймовірно надаватимуть чистіший, більш передбачуваний та ефективніший спосіб обробки reactivity через весь framework.
+
+### ✅ Signal Forms в Angular 21 — повний посібник
+
+**Джерело:** [Signal Forms in Angular 21 – Complete Guide](https://www.angular.love/signal-forms-in-angular-21-complete-guide)
+
+**Основна ідея:** Signal Forms - це переосмислена з нуля імплементація форм в Angular, що надає справжній typing, автоматичну реактивність, спрощені custom controls та реюзабельні схеми валідації.
+
+Signal forms представляють фундаментальну зміну порівняно з Reactive Forms. **Form Model** - writable signal, з яким ініціалізуємо форму: `loginModel = signal({ email: '', password: '' })`. Це критично, оскільки form model безпосередньо відповідає типу форми. Будь-які модифікації та оновлення form model будуть безпосередньо propagated та reflected формою. У попередньому підході форма управляла власним станом незалежно - mapping об'єктних полів до form controls, але стан форми існував незалежно від source об'єкта.
+
+Створення нової форми відбувається через `form()` функцію: `loginForm = form(this.loginModel)`. Перший аргумент - form model, який дасть тип формі та на його основі ініціалізується Form Tree - ієрархічна структура полів, де кожен об'єкт у моделі стає node зі своїми дітьми, а кожне примітивне значення стає terminal field (leaf). Навігація через форму природно відповідає навігації через дані: `loginForm.email`, `loginForm.password`.
+
+**Typing - кінець компромісів**: У Reactive Forms кожен FormControl за замовчуванням має тип T | null. Signal forms - тип приходить безпосередньо з моделі: `myForm.email().value()` є `string`, ніякого null. Метод `get()` в Reactive Forms втрачає типи - навіть якщо форма typed, `form.get('user.email')` повертає `AbstractControl<unknown, unknown> | null`. Signal forms мають повну navigation typing: `myForm.user.email().value()` є `string`, помилка в імені викличе compilation error. FormArray в Reactive Forms втрачає структуру через `at()`. Signal forms зберігають повну структуру з typed iteration.
+
+**Валідація**: Predefined validators включають `required(path)`, `min(path, minValue)`, `max(path, maxValue)`, `minLength(path, length)`, `maxLength(path, length)`, `pattern(path, regex)`, `email(path)`. Custom validators простіші: `validate(f.username, ({ value }) => { if (value().includes(' ')) return customError({ kind: 'no-spaces' }); })`. Validator context дає доступ до `value()`, `valueOf(path)`, `state`, `stateOf(path)`.
+
+Ключова перевага - **автоматичне відстеження залежностей валідаторів**. Validators працюють всередині reactive context, що означає Angular автоматично відстежує всі read signals. Валідатор пароля `validate(f.confirmPassword, ({ value, valueOf }) => value() !== valueOf(f.password) ? error : undefined)` запуститься коли змінюється confirmPassword АБО password. У Reactive Forms це вимагало manual `this.form.get('password').valueChanges.subscribe(() => this.form.get('confirmPassword').updateValueAndValidity())`. В signal forms це відбувається автоматично, zero subscriptions, zero manual `updateValueAndValidity()` викликів.
+
+**Схеми** дозволяють визначити набір правил один раз та застосувати у багатьох місцях: `const addressSchema = schema<Address>((addr) => { required(addr.street); required(addr.city); pattern(addr.zipCode, /^\d{2}-\d{3}$/); })`. Застосування: `apply(customer.billingAddress, addressSchema)`, `applyEach(order.addresses, addressSchema)`. Conditional schemas: `applyWhen(f.payment, ({ valueOf }) => valueOf(f.paymentMethod) === 'card', cardPaymentSchema)`.
+
+**Field directive** - одна дорога для всього замість різних directives (`formControl`, `formControlName`, `formGroupName`): завжди `[field]`. Автоматична state binding з typed template - при спробі bind number type field до input, що очікує string, отримаєте type error у template. Custom controls тепер простіші - замість ControlValueAccessor з 4 методами та magical provider, потрібен лише один `value = model('')` signal з `FormValueControl<T>` interface. Optional inputs як `disabled`, `touched`, `errors` автоматично заповнюються `[field]` directive якщо декларовані.
+
+**Submit та Reset**: `submit(myForm, async (form) => { ... })` автоматично marks fields as touched, перевіряє `valid()`, встановлює `submitting` в true під час виконання, застосовує server errors. `reset()` очищає interaction state (touched, dirty), опціонально приймає нове значення. **Debouncing**: `debounce(f.query, 300)` оновлює model лише 300ms після останньої зміни.
+
+**Migration з compatForm**: Для існуючих застосунків з Reactive Forms, `compatForm()` дозволяє змішувати обидва світи. Model може містити як regular signal forms поля, так і existing FormControl: `const model = signal({ name: 'Jan', age: ageControl })`. Стан синхронізується bidirectionally, validators поважаються, але не можна застосувати signal forms rules безпосередньо до FormControl полів.
+
+Status: Experimental 21.0.0 - API може змінитись, але для нових проєктів вже вартий використання. Signal forms - це не еволюція Reactive Forms, а переосмислена з нуля імплементація. Ключові зміни: Model як source of truth, справжній typing без компромісів, reactivity з коробки, один API, schemas, прості Controls. Для існуючих застосунків - якщо є час та бюджет, так. Якщо ні - compatForm дозволяє вводити поступово. Для нових проєктів - Signal forms є майбутнім форм в Angular.
