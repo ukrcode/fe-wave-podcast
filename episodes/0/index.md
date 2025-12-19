@@ -25,7 +25,7 @@
   - ✅ [Як завантажити CSS (швидко)](https://calendar.perfplanet.com/2025/how-to-load-css-fast/)
 - **Інструменти**
   - 📚 [Функції WebKit для Safari 26.2](https://webkit.org/blog/17640/webkit-features-for-safari-26-2/)
-  - ✅ [Deno 2.6: dx — це новий npx](https://deno.com/blog/v2.6)
+  - 📚 [Deno 2.6: dx — це новий npx](https://deno.com/blog/v2.6)
   - ✅ [Корисні шаблони для створення HTML-інструментів](https://simonwillison.net/2025/Dec/10/html-tools/)
 
 ### **CSS**

@@ -1,4 +1,4 @@
-Останні новини фронтенду #1: безпека в NPM, CSS Wrapped 2025, TypeScript 7
+Останні новини фронтенду і веб-розробки. Випуск #1: безпека в NPM, CSS Wrapped 2025, TypeScript 7
 
 Всім привіт, мене звати Станіслав Долгачов, і на цій зустрічі я розкажу про останні новини фронтенду на основі [Front-end Digest № 130](https://dou.ua/forums/topic/57004/) з front-end спільноти DOU від [Olexander Smolianinov](https://dou.ua/users/dersmoll/).
 
