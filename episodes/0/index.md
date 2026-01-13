@@ -2,113 +2,76 @@
 
 🎙️ Мене звати Станіслав і я фронтенд розробник з Києва. Ідея цього подкасту виникла після того, як я не знайшов нічого подібного українською мовою. Тут кожного тижня я буду розповідати про найважливіші новини фронтенду і веб-розробки.
 
-💅 Цей випуск зроблено на основі [Front-end Digest № 131](https://dou.ua/forums/topic/57099/) і [Front-end Digest № 132](https://dou.ua/forums/topic/57182/) від [Olexander Smolianinov](https://dou.ua/users/dersmoll/), frontend director в [ZFORT Group](https://jobs.dou.ua/companies/zfort/). Обовʼязково підпишіться на його дайджест, там дуже багато корисної інформації.
+💅 Цей випуск зроблено на основі [Front-end Digest № 134](https://dou.ua/forums/topic/57368/) від [Olexander Smolianinov](https://dou.ua/users/dersmoll/), frontend director в [ZFORT Group](https://jobs.dou.ua/companies/zfort/). Обовʼязково підпишіться на його дайджест, там дуже багато корисної інформації.
 
 📝 Нижче наведено оригінальний текст дайджесту з невеличким змінами.
 
 Новини, які увійшли в випуск помічені ✅, решта — рекомендоване читання - 📚. Я зробив таке розділення, бо їх забагато для формату і таймінгу, в який хочу вкластися.
 
-# Front-end Digest № 131: анатомія LCP, оптимізація CLS та WebAssembly для JS-розробників
+# Front-end Digest № 134: драма Tailwind, зламані вебзалежності та як використовувати @scope в CSS
 
 ### **Веброзробка**
 
-#### Дайджест №131
-
-- ✅ [Vercel: наш React2Shell-челендж для хакерів на мільйон доларів](https://vercel.com/blog/our-million-dollar-hacker-challenge-for-react2shell)
-- ✅ [State of HTML 2025](https://2025.stateofhtml.com/ua-UA/)
-- ✅ [Вимірювання результативності функцій](https://www.smashingmagazine.com/2025/12/how-measure-impact-features-tars/)
-
-#### Дайджест №132
-
-- ✅ [Frontend Wrapped 2025: 10 історій, які сформували рік.](https://blog.logrocket.com/frontend-wrapped-2025/)
-- ✅ [Вебкомпоненти: повернення, якого ніхто не чекав.](https://thenewstack.io/web-components-are-the-comeback-nobody-saw-coming/)
-- ✅ [Коли відеокодек отримує Еммі](https://blog.mozilla.org/en/mozilla/av1-video-codec-wins-emmy/)
+- ✅ [Вебзалежності зламані. Чи можемо ми їх полагодити?](https://lea.verou.me/blog/2026/web-deps/)
+- ✅ [Tailwind звільняє своїх інженерів через ШІ, а Google та Vercel спішать на «допомогу»: обговорюємо ситуацію](https://dou.ua/forums/topic/57336/)
+- ✅ [Не у всіх API-браузерів є «веб-API»](https://polypane.app/blog/not-all-browser-apis-are-web-apis/)
+- ✅ [Не випускайте ще один чат-інтерфейс. Створюйте справжній ШІ з AG-UI](https://blog.logrocket.com/build-real-ai-with-ag-ui/)
+- ✅ [Антифреймворкізм: вибір на користь нативних веб-API замість фреймворків](https://blog.logrocket.com/anti-frameworkism-native-web-apis/)
+- [WASI 1.0: ви й не помітите, як WebAssembly буде всюди у 2026 році](https://thenewstack.io/wasi-1-0-you-wont-know-when-webassembly-is-everywhere-in-2026/)
+- [Створення кращих кнопок](https://www.simplethread.com/building-better-buttons/)
 
 - **Інструменти**
-  - ✅ [Великі перегони JavaScript-бандлерів](https://redmonk.com/kholterhoff/2025/12/16/javascript-bundler-grand-prix/)
-  - ✅ [Посібник з впровадження Vitest 4: огляд та міграція з Jest](https://blog.logrocket.com/vitest-adoption-guide/)
-- **Продуктивність**
-  - ✅ [Оптимізація CLS для нескінченної прокрутки та Load More](https://calendar.perfplanet.com/2025/optimizing-cls-for-infinite-scroll-and-load-more/)
+  - [Новинки в ViteLand: підсумки грудня 2025 року](https://voidzero.dev/posts/whats-new-dec-2025)
+  - [Як GitHub міг би захистити npm](https://humanwhocodes.com/blog/2026/01/how-github-could-secure-npm/)
+  - [Bun приєднується до тестування мікросервісних фреймворків: напрочуд швидке середовище виконання JavaScript](https://ozkanpakdil.github.io/posts/my%5Fcollections/2026/2026-01-10-bun-microservice-framework-benchmark/)
 - **Ефекти**
-  - ✅ [Toon Text від Енді Кларка — класичні титри з мультфільмів, перенесені в веб за допомогою css, js та svg](https://stuffandnonsense.co.uk/toon-text/tool.html)
+  - [За межами миші: анімація з використанням мобільних акселерометрів](https://frontendmasters.com/blog/beyond-the-mouse-animating-with-mobile-accelerometers/)
+  - [Infinite Canvas: створення цілісного простору зображень із панорамуванням у будь-якому напрямі](https://tympanus.net/codrops/2026/01/07/infinite-canvas-building-a-seamless-pan-anywhere-image-space/)
+  - [Як створити ефект падіння відео з пікселів у вокселі за допомогою Three.js і Rapier](https://tympanus.net/codrops/2026/01/05/how-to-create-a-pixel-to-voxel-video-drop-effect-with-three-js-and-rapier/)
 
 ### **CSS**
 
-#### Дайджест №131
-
-- ✅ [Masonry-розкладка стала grid-lanes](https://css-tricks.com/masonry-layout-is-now-grid-lanes/)
-- ✅ [View Transitions для Dialog](https://medienbaecker.com/articles/dialog-view-transitions)
-- ✅ [VoxCSS — CSS-воксельний рушій](https://voxcss.com/)
-- ✅ [Bad CSS-Dad Jokes (V)](https://alvaromontoro.com/blog/68087/bad-css-dad-jokes-v)
-
-#### Дайджест №132
-
-- ✅ [Container queries у 2026: Потужні, але не панацея](https://blog.logrocket.com/container-queries-2026/)
+- [Контекстні меню з Anchor-позиціонуванням](https://frontendmasters.com/blog/popover-context-menus-with-anchor-positioning/)
+- [4 функції CSS, які повинен знати кожен фронтенд-розробник у 2026 році](https://nerdy.dev/4-css-features-every-front-end-developer-should-know-in-2026)
+- [Як використовувати @scope CSS після набуття ним статусу Baseline](https://frontendmasters.com/blog/how-to-scope-css-now-that-its-baseline/)
+- [Майбутнє CSS: :drag (і, можливо, ::dragged-image?)](https://css-tricks.com/future-css-drag-and-maybe-dragged-image/)
+- [Адаптивна шестикутна сітка без медіа-запитів](https://css-tip.com/hexagon-grid/)
+- [Легкі анімації з CSS view transitions](https://giacomocavalieri.me/writing/effortless-animations-with-css-view-transitions)
+- [Стилі тексту для цього блогу](https://www.ben-knight.dev/blog/web/stylingtext/)
+- [Bad CSS-Dad Jokes (VI)](https://alvaromontoro.com/blog/68090/dad-jokes-vi)
 
 ### **JavaScript**
 
-#### Дайджест №131
+- [Критична уразливість jsPDF дозволяє несанкціоноване читання файлів у середовищах Node.js.](https://www.csoonline.com/article/4114360/critical-jspdf-vulnerability-enables-arbitrary-file-read-in-node-js-deployments.html)
+- [2025 JavaScript Rising Stars](https://risingstars.js.org/2025/en)
+- [Потокове передавання JSON лише 200 рядками JavaScript](https://krasimirtsonev.com/blog/article/streaming-json-in-just-200-lines-of-javascript)
+- [React нарешті розв’язав свою найважливішу проблему: переваги useEffectEvent](https://blog.logrocket.com/react-has-finally-solved-its-biggest-problem-useeffectevent/)
+- [Вихід за межі RxJS: посібник з TanStack Pacer](https://blog.logrocket.com/beyond-rxjs-guide-tanstack-pacer/)
+- [Забудьте про Date, переходьте на Temporal](https://piccalil.li/blog/date-is-out-and-temporal-is-in/)
+- [Спрощуємо прототипи JavaScript у викликах конструктора: прості пояснення та діаграми](https://www.telerik.com/blogs/simplifying-javascript-prototypes-constructor-invocation-simple-words-diagrams)
 
-- ✅ [Дослідження мультибрендових систем за допомогою токенів і компонування у Vue](https://frontendmasters.com/blog/exploring-multi-brand-systems-with-tokens-and-composability/)
-- ✅ [Виживання в умовах нестачі RAM: поради з ефективності для JavaScript-розробників](https://blog.codeminer42.com/surviving-the-ram-squeeze-efficiency-tips-for-javascript-developers/)
+### **Фронтенд-меми**
 
-#### Дайджест №132
+![](https://s.dou.ua/storage-files/image_211421865121768216459750.png)
 
-- ✅ [Тенденції, що визначили JavaScript у 2025 році](https://thenewstack.io/trends-that-defined-javascript-in-2025/)
-- ✅ [Характеристика Vue.js](https://wtrclred.io/en/posts/07)
-- ✅ [Заміна JS на HTML](https://www.htmhell.dev/adventcalendar/2025/27/)
+![](https://s.dou.ua/storage-files/image_464271799131768216459751_opt.jpg)
 
-# Front-end Digest № 132: Фронтенд в 2025, Заміна JS на HTML та налагодження швидкодії вебсайтів
+![](https://s.dou.ua/storage-files/image_844756078141768216459752.png)
 
-### Швидкодія
+![](https://s.dou.ua/storage-files/image_11367401151768216459754.png)
 
-- ✅ [Усунення втрати швидкодії через URL-параметри](https://calendar.perfplanet.com/2025/fixing-the-url-params-performance-penalty/)
-- ✅ [Порівняння продуктивності: Серверні компоненти та острівна архітектура](https://blog.logrocket.com/server-components-vs-islands-architecture/)
+![](https://s.dou.ua/storage-files/image_397355764161768216459754.png)
 
-### Фронтенд-меми дайджест №131
+![](https://s.dou.ua/storage-files/image_479716433171768216459755.png)
 
-![](https://s.dou.ua/storage-files/image_969237857121766401401238.png)
+![](https://s.dou.ua/storage-files/image_706959446181768216459756.png)
 
-![](https://s.dou.ua/storage-files/image_948600684131766401401238.png)
+![](https://s.dou.ua/storage-files/image_132800094191768216459756.png)
 
-![](https://s.dou.ua/storage-files/image_187307971141766401401239.png)
+![](https://s.dou.ua/storage-files/image_174123254201768216459757.png)
 
-![](https://s.dou.ua/storage-files/image_60369351151766401401240_opt.jpg)
-
-![](https://s.dou.ua/storage-files/image_742970063161766401401241.png)
-
-![](https://s.dou.ua/storage-files/image_173746659171766401401241.png)
-
-![](https://s.dou.ua/storage-files/image_314754338181766401401244_opt.jpg)
-
-![](https://s.dou.ua/storage-files/image_897390079191766401401244.png)
-
-![](https://s.dou.ua/storage-files/image_934741300201766401401245.png)
-
-![](https://s.dou.ua/storage-files/image_196949269211766401401246.png)
-
-### Фронтенд-меми дайджест №132
-
-![](https://s.dou.ua/storage-files/image_294155881121767007513730.png)
-
-![](https://s.dou.ua/storage-files/image_860746610131767007513732_opt.jpg)
-
-![](https://s.dou.ua/storage-files/image_223852715141767007513732.png)
-
-![](https://s.dou.ua/storage-files/image_598226366151767007513733.png)
-
-![](https://s.dou.ua/storage-files/image_816216163161767007513734.png)
-
-![](https://s.dou.ua/storage-files/image_583350761171767007513735_opt.jpg)
-
-![](https://s.dou.ua/storage-files/image_924904902181767007513736_opt.jpg)
-
-![](https://s.dou.ua/storage-files/image_696667408191767007513737.png)
-
-![](https://s.dou.ua/storage-files/image_324006682201767007513738.png)
-
-![](https://s.dou.ua/storage-files/image_415803973211767007513739_opt.jpg)
+![](https://s.dou.ua/storage-files/image_235406421211768216459757.png)
 
 [Підписуйтеся на телеграм-канал Front-end спільноти!](https://t.me/frontend%5Fdou)
 
-Теми: [CSS](https://dou.ua/forums/tags/CSS/),[Front-end](https://dou.ua/forums/tags/Front-end/),[front-end digest](https://dou.ua/forums/tags/front-end%20digest/), [HTML](https://dou.ua/forums/tags/HTML/),[JS](https://dou.ua/forums/tags/JS/),[tech](https://dou.ua/forums/tags/tech/)
+Теми: [CSS](https://dou.ua/forums/tags/CSS/),[Front-end](https://dou.ua/forums/tags/Front-end/),[front-end digest](https://dou.ua/forums/tags/front-end%20digest/), [JavaScript](https://dou.ua/forums/tags/JavaScript/),[Tailwind](https://dou.ua/forums/tags/Tailwind/),[tech](https://dou.ua/forums/tags/tech/)
