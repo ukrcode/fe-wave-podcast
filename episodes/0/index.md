@@ -17,17 +17,17 @@
 - ✅ [Не у всіх API-браузерів є «веб-API»](https://polypane.app/blog/not-all-browser-apis-are-web-apis/)
 - ✅ [Не випускайте ще один чат-інтерфейс. Створюйте справжній ШІ з AG-UI](https://blog.logrocket.com/build-real-ai-with-ag-ui/)
 - ✅ [Антифреймворкізм: вибір на користь нативних веб-API замість фреймворків](https://blog.logrocket.com/anti-frameworkism-native-web-apis/)
-- [WASI 1.0: ви й не помітите, як WebAssembly буде всюди у 2026 році](https://thenewstack.io/wasi-1-0-you-wont-know-when-webassembly-is-everywhere-in-2026/)
-- [Створення кращих кнопок](https://www.simplethread.com/building-better-buttons/)
+- ✅ [WASI 1.0: ви й не помітите, як WebAssembly буде всюди у 2026 році](https://thenewstack.io/wasi-1-0-you-wont-know-when-webassembly-is-everywhere-in-2026/)
+- ✅ [Створення кращих кнопок](https://www.simplethread.com/building-better-buttons/)
 
 - **Інструменти**
-  - [Новинки в ViteLand: підсумки грудня 2025 року](https://voidzero.dev/posts/whats-new-dec-2025)
-  - [Як GitHub міг би захистити npm](https://humanwhocodes.com/blog/2026/01/how-github-could-secure-npm/)
-  - [Bun приєднується до тестування мікросервісних фреймворків: напрочуд швидке середовище виконання JavaScript](https://ozkanpakdil.github.io/posts/my%5Fcollections/2026/2026-01-10-bun-microservice-framework-benchmark/)
+  - 📚 [Новинки в ViteLand: підсумки грудня 2025 року](https://voidzero.dev/posts/whats-new-dec-2025)
+  - 📚 [Як GitHub міг би захистити npm](https://humanwhocodes.com/blog/2026/01/how-github-could-secure-npm/)
+  - ✅ [Bun приєднується до тестування мікросервісних фреймворків: напрочуд швидке середовище виконання JavaScript](https://ozkanpakdil.github.io/posts/my%5Fcollections/2026/2026-01-10-bun-microservice-framework-benchmark/)
 - **Ефекти**
-  - [За межами миші: анімація з використанням мобільних акселерометрів](https://frontendmasters.com/blog/beyond-the-mouse-animating-with-mobile-accelerometers/)
-  - [Infinite Canvas: створення цілісного простору зображень із панорамуванням у будь-якому напрямі](https://tympanus.net/codrops/2026/01/07/infinite-canvas-building-a-seamless-pan-anywhere-image-space/)
-  - [Як створити ефект падіння відео з пікселів у вокселі за допомогою Three.js і Rapier](https://tympanus.net/codrops/2026/01/05/how-to-create-a-pixel-to-voxel-video-drop-effect-with-three-js-and-rapier/)
+  - 📚 [За межами миші: анімація з використанням мобільних акселерометрів](https://frontendmasters.com/blog/beyond-the-mouse-animating-with-mobile-accelerometers/)
+  - 📚 [Infinite Canvas: створення цілісного простору зображень із панорамуванням у будь-якому напрямі](https://tympanus.net/codrops/2026/01/07/infinite-canvas-building-a-seamless-pan-anywhere-image-space/)
+  - 📚 [Як створити ефект падіння відео з пікселів у вокселі за допомогою Three.js і Rapier](https://tympanus.net/codrops/2026/01/05/how-to-create-a-pixel-to-voxel-video-drop-effect-with-three-js-and-rapier/)
 
 ### **CSS**
 
