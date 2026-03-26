@@ -31,8 +31,8 @@
 
 ### **CSS**
 
-- [Контекстні меню з Anchor-позиціонуванням](https://frontendmasters.com/blog/popover-context-menus-with-anchor-positioning/)
-- [4 функції CSS, які повинен знати кожен фронтенд-розробник у 2026 році](https://nerdy.dev/4-css-features-every-front-end-developer-should-know-in-2026)
+- ✅ [Контекстні меню з Anchor-позиціонуванням](https://frontendmasters.com/blog/popover-context-menus-with-anchor-positioning/)
+- 📚 [4 функції CSS, які повинен знати кожен фронтенд-розробник у 2026 році](https://nerdy.dev/4-css-features-every-front-end-developer-should-know-in-2026)
 - [Як використовувати @scope CSS після набуття ним статусу Baseline](https://frontendmasters.com/blog/how-to-scope-css-now-that-its-baseline/)
 - [Майбутнє CSS: :drag (і, можливо, ::dragged-image?)](https://css-tricks.com/future-css-drag-and-maybe-dragged-image/)
 - [Адаптивна шестикутна сітка без медіа-запитів](https://css-tip.com/hexagon-grid/)
