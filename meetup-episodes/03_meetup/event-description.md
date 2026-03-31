@@ -2,8 +2,8 @@
 
 Ми обговоримо:
 
-- ⭐ Що нового в Astro — листопад 2025
-- #️⃣ Абсолютно нові компонування з CSS Subgrid
-- 💅 CSS-in-JS: чому це було поганою ідеєю
-- 🌊 Ripple замість React? Огляд нового JS-фреймворку
-- 💻 Решту новин ви можете подивитись в [плані зустрічі](https://github.com/ukrcode/fe-wave-podcast/blob/main/episodes/0/index.md)
+- ⭐ Анонс TypeScript 6.0
+- #️⃣ Рефакторинг CSS: ШІ як страховка
+- 💅 Новинки вебплатформи в березні
+- 🌊 Масштабна кампанія в GitHub поширює шкідливе ПЗ через підроблені попередження про безпеку VS Code.
+- 💻 Решту новин ви можете подивитись в [плані зустрічі](https://github.com/ukrcode/fe-wave-podcast/blob/main/meetup-episodes/03_meetup/index.md)
