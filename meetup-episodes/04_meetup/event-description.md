@@ -2,8 +2,8 @@
 
 Ми обговоримо:
 
-- ⭐ Під капотом нового фронтенду MDN
-- #️⃣ Agentic Engine Optimization (AEO)
+- ⚙️ Під капотом нового фронтенду MDN
+- 🤖 Agentic Engine Optimization (AEO)
 - 💅 Tailwind CSS v4.0: що змінилося, наскільки він швидкий і чи варто оновлюватися
-- 🌊 Прихований радіус ураження компрометації Axios.
+- ⚠️ Прихований радіус ураження компрометації Axios.
 - 💻 Решту новин ви можете подивитись в [плані зустрічі](https://github.com/ukrcode/fe-wave-podcast/blob/main/meetup-episodes/04_meetup/index.md)
