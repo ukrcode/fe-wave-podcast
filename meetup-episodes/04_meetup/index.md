@@ -23,7 +23,7 @@
 - [Нові можливості DevTools (Chrome 147)](https://developer.chrome.com/blog/new-in-devtools-147)
 
 - **Ефекти**
-  - [Посібник із SVG Filters: Основи для початківців](https://frontendmasters.com/blog/svg-filters-guide-getting-started-with-the-basics/)
+  - ✅ [Посібник із SVG Filters: Основи для початківців](https://frontendmasters.com/blog/svg-filters-guide-getting-started-with-the-basics/)
   - [Створення вебсайту Maxima Therapy: React, GSAP та експерименти з ШІ](https://tympanus.net/codrops/2026/04/06/building-the-maxima-therapy-website-react-gsap-and-dabbling-with-ai/)
   - [Реалізація кастомних переходів сторінок в Astro з використанням Barba.js та GSAP](https://tympanus.net/codrops/2026/04/08/creating-custom-page-transitions-in-astro-with-barba-js-and-gsap/)
 
@@ -35,7 +35,7 @@
 - [Огляд нових функцій обтікання в багатоколонковому CSS-макеті.](https://css-tricks.com/css-multi-column-layout-wrapping-features/)
 - ✅ [Альтернативи ключовому слову !important](https://css-tricks.com/alternatives-to-the-important-keyword/)
 - [Інтерактивний hover-ефект для обкладинки](https://kittygiraudel.com/2026/04/09/an-interactive-cover-component/)
-- ✅ [Вибір діапазону дат у CSS](https://css-tricks.com/selecting-a-date-range-in-css/)
+- [Вибір діапазону дат у CSS](https://css-tricks.com/selecting-a-date-range-in-css/)
 - ✅ [Чому CSS-арт зник із культури фронтенду](https://blog.logrocket.com/css-art-frontend-culture/)
 - ✅ [Tailwind CSS v4.0: що змінилося, наскільки він швидкий і чи варто оновлюватися](https://fireup.pro/news/tailwind-css-v4-0)
 - ✅ [\`font-family\` fallback працює не так, як ви гадаєте](https://csswizardry.com/2026/04/font-family-doesnt-fall-back-the-way-you-think/)
@@ -46,7 +46,7 @@
 - [page-agent.js — JavaScript-агент для управління графічним інтерфейсом на сторінці. Керуйте веб-інтерфейсами за допомогою природної мови.](https://github.com/alibaba/page-agent)
 - ✅ [Solid 2.0 Beta: підтримка в TanStack Router, Start і Query](https://tanstack.com/blog/tanstack-start-solid-v2)
 - ✅ [Відмова від Next.js у фронтенді Railway](https://blog.railway.com/p/moving-railways-frontend-off-nextjs)
-- ✅ [Вам справді, справді, справді не потрібен effect! Клянуся!](https://neciudan.dev/you-really-really-dont-need-an-effect)
+- [Вам справді, справді, справді не потрібен effect! Клянуся!](https://neciudan.dev/you-really-really-dont-need-an-effect)
 
 ### Меми[![Image](https://i.programmerhumor.io/2026/04/1e19f461b7ecf6a2aedc378313bd6f5fa4fcd4dc046c2def10e88f275939a4a1.jpeg) ](https://programmerhumor.io/)
 
