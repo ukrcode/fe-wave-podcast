@@ -6,4 +6,4 @@
 - 💅 neat-annotations — Мальовані стрілки та рукописні написи для вашого вебсайту. 
 - 👴 Двадцять років jQuery: як невелика бібліотека змінила веб-розробку
 - ⚛️ React 19.3
-- 💻 Решту новин ви можете подивитись в [плані зустрічі](https://github.com/ukrcode/fe-wave-podcast/blob/main/meetup-episodes/05_meetup/index.md)
+- 💻 Решту новин ви можете подивитись в [плані зустрічі](https://github.com/ukrcode/fe-wave-podcast/blob/main/meetup-episodes/06_meetup/index.md)
